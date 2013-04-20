@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Multi Media Box 2.0</name>
+	<author>YouJoomla.com</author>
+	<creationDate>9-17-2010</creationDate>
+	<copyright>(C)2009 Youjoomla LLC</copyright>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<version>2.0.2</version>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<description>PLEASE GO TO MULTI MEDIA BOX PLUGIN FOR DETAILS</description>
+	<files>
+		<filename plugin="bot_mb">bot_mb.php</filename>
+		<filename plugin="bot_mb">bot_mb/css/yjmmbox.css</filename>
+		<filename plugin="bot_mb">bot_mb/index.html</filename>
+		<filename plugin="bot_mb">bot_mb/css/index.html</filename>
+		<filename plugin="bot_mb">bot_mb/css/ie6fixes.css</filename>
+		<filename plugin="bot_mb">bot_mb/js/index.html</filename>
+		<filename plugin="bot_mb">bot_mb/js/yjmmbox.js</filename>
+		<filename plugin="bot_mb">bot_mb/js/yjmmbox_uncompressed.js</filename>
+		<filename plugin="bot_mb">bot_mb/js/ie6minmax.js</filename>
+		<filename plugin="bot_mb">bot_mb/js/mediaplayer.swf</filename>
+		<filename plugin="bot_mb">bot_mb/images/index.html</filename>
+		<filename plugin="bot_mb">bot_mb/images/loading2.gif</filename>
+        <filename plugin="bot_mb">bot_mb/images/left.png</filename>
+		<filename plugin="bot_mb">bot_mb/images/right.png</filename>
+		<filename plugin="bot_mb">bot_mb/images/close.png</filename>
+		<filename plugin="bot_mb">bot_mb/images/caption.png</filename>
+		<filename plugin="bot_mb">bot_mb/images/logotm.jpg</filename>
+		<filename plugin="bot_mb">bot_mb/images/1_close.png</filename>
+		<filename plugin="bot_mb">bot_mb/images/1_loading.gif</filename>
+		<filename plugin="bot_mb">bot_mb/images/1_next.png</filename>
+		<filename plugin="bot_mb">bot_mb/images/1_prev.png</filename>
+	</files>
+    <params>
+       <param name="@spacer" type="spacer"/>
+       <param name="image_folder" type="text" default="images/stories" label="Default image folder" description="Default image folder" />
+       <param name="@spacer" type="spacer"/>
+    </params>
+  <languages>
+    <language tag="en-GB">languages/en-GB/en-GB.plg_content_bot_mb.ini</language>
+  </languages>
+</install>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" group="content" method="upgrade">
+	<name>Youversity News Slider</name>
+	<author>YouJoomla.com</author>
+	<creationDate>01-08-2010</creationDate>
+	<license>commercial</license>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>1.0</version>
+	<description>THANK YOU FOR INSTALLING YOUVERSITY NEWS SLIDER</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_youversity_slider.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_youversity_slider">mod_youversity_slider.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>src</folder>
+		<folder>elements</folder>
+		<folder>lib</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+	<params addpath="/modules/mod_youversity_slider/elements/">
+		<param type="yjspacer" default="&lt;strong&gt;MODULE LAYOUT SETTINGS&lt;/strong&gt;" />
+		<param name="module_template" type="folderlist" default="Default" hide_none="blank" label="Select default module template" directory="modules/mod_youversity_slider/tmpl" description="You can create custom module  templates for YouVersity News Slider Simply copy modules/mod_youversity_slider/tmpl/Default folder , rename it to your own template name and edit default.php within your template folder to your liking. Once you have created your module template , your template name will be visible here. You can also copy your template folder to your template/html/mod_youversity_slider/ folder and create custom overides for each module instance. To get you started we have created blank module template name New" />
+		
+		
+		<param type="yjspacer" default="&lt;strong&gt;SLIDER LAYOUT SETTINGS&lt;/strong&gt;" />
+		<param name="slider_width" type="text" default="980px" label="Slider width" description="Should not be wider than the module holding div container" />
+		<param name="slider_height" type="text" default="250px" label="Slider height" description="Define slider height" />
+
+
+
+		
+		
+		<param type="yjspacer" default="&lt;strong&gt;NEWS SOURCE SETTINGS&lt;/strong&gt;" />
+		<param name="get_items" type="mos_category" default="1" label="News items category" description="In this categorie there must be min 1 news item published" />
+		<param name="item" type="yjgetitem" default="" label="Select specific items" description="Choose specific news items you would like to display. Note that category setting above will not take affect if this option is choose." />
+		<param name="getspecific" type="yjlistitems" default="" label="Specific items list and order" description="First select few items from setting above. Drag and drop to re-order items. Click the remove icon to remove an item from the list. Note that the items reorder works only if you set News items ordering to Specific items order!" />
+		<param name="ordering" type="list" default="1" label="News Items Ordering" description="Choose news items order sequence. Note that Specific items order is the display order of your Specific items order setting above ">
+			<option value="1">Joomla news item ordering</option>
+			<option value="2">Most popular</option>
+			<option value="3">Random  news item</option>
+			<option value="4">Date created oldest article first</option>
+			<option value="5">Date created newest article first</option>
+			<option value="6">Specific items order</option>
+		</param>
+		<param type="yjspacer" default="&lt;strong&gt;NEWS ITEM SETTINGS&lt;/strong&gt;" />
+		<param name="nitems" type="text" default="4" label="Number of news items to display" description="Number of news items to display" />
+		<param name="chars" type="text" default="40" label="Number of characters to display" description="Number of characters to display" />
+		<param name="allow_tags" type="text" default="" size="60" label="Alowable html tags" description="ALLOWTAGSTEXT" />
+		
+		<param name="show_img" type="list" default="1" label="Show intro image?" description="Show or hide intro image">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+				<param name="slider_image_width" type="text" default="" label="Intro image width" description="If left empty , image will keep its original size. Note: To avoid image distortion use only width or only height." />
+		<param name="slider_image_height" type="text" default="" label="Intro image height" description="If left empty , image will keep its original size. Note: To avoid image distortion use only width or only height." />
+		
+		
+		
+				
+		<param name="show_title" type="list" default="1" label="Show item title?" description="Show or hide news item title">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="show_read" type="list" default="1" label="Show read more?" description="Show or hide read more text">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		
+		
+		
+		<param type="yjspacer" default="&lt;strong&gt;SLIDER SCRIPT SETTINGS&lt;/strong&gt;" />
+		<param name="visible_items" type="text" default="2" label="Visible Intro items" description="Set the number of visible intro items on page load" />
+		<param name="effectDuration" type="text" default="500" label="Effect durration" description="Slide transition effect duration. Defined in milliseconds.1 sec = 1000" />
+		<param name="autoslide" type="text" default="5000" label="Autoslide" description="This is auto slide duration between the slides. If set to 0 slider will not slide automatically" />
+		<param type="yjspacer" default="&lt;strong&gt;MODULE SUFFIX&lt;/strong&gt;" />
+		<param name="moduleclass_sfx" type="text" default="_youversity_slider" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	</params>
+</install>

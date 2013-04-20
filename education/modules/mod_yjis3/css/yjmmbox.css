@@ -1,0 +1,85 @@
+#lbOverlay{position:absolute; left:0; width:100%; background-color:#000; cursor:pointer; z-index:100000}
+
+#lbCenter, #lbBottomContainer{position:absolute; left:50%; overflow:hidden; background-color:#000; z-index:100003}
+
+.lbLoading{background:#000 url(../img/1_loading.gif) no-repeat center}
+
+#lbImage{background-repeat:no-repeat; border:7px solid #000}
+
+#lbPrevLink, #lbNextLink{display:block; position:absolute; top:0; width:50%; outline:none}
+
+#lbPrevLink{left:0}
+
+#lbPrevLink:hover{background:transparent url(../img/1_prev.png) no-repeat 0% 30%}
+
+#lbNextLink{right:0}
+
+#lbNextLink:hover{background:transparent url(../img/1_next.png) no-repeat 100% 30%}
+
+#lbBottom{font-family:Verdana,Helvetica,sans-serif; font-size:10px; color:#666; line-height:16px; text-align:left; border:7px solid #000; border-top-style:none}
+
+#lbCloseLink{display:block; float:right; width:80px; height:16px; background:transparent url(../img/1_close.png) no-repeat center; margin:0px}
+
+#lbCaption, #lbNumber{margin-right:14px}
+
+#lbCaption{font-weight:bold}
+#POP_window{font:12px Arial,Helvetica,sans-serif; color:#000}
+#POP_window a img{border:0}
+a img{border:0}
+
+#POP_window ul{list-style-type:none; margin:0; margin-left:10px; padding:0}
+
+#next{width:24px; height:24px; right:-23px; top:-25px; margin-top:5px; cursor:pointer; position:absolute; display:block; background:url(../img/right.png) no-repeat left bottom}
+#prev{width:24px; height:24px; left:-23px; top:-25px; margin-top:5px; cursor:pointer; position:absolute; display:block; background:url(../img/left.png) no-repeat left bottom}
+#close{width:24px; height:24px; right:-23px; bottom:-25px; margin-top:5px; cursor:pointer; position:absolute}
+#closeb{text-indent:-7500px; display:block; width:24px; height:24px; float:right; background:url(../img/close.png) no-repeat}
+#POP_window li{float:left; display:inline; margin:0; padding:0}
+#POP_secondLine{font:bold 10px Arial,Helvetica,sans-serif; color:#666}
+
+#POP_window a:link{color:#fff}
+#POP_window a:visited{color:#fff}
+#POP_window a:hover{color:#efefef}
+#POP_window a:active{color:#fff}
+#POP_window a:focus{color:#666}
+
+#POP_overlay{position:absolute; z-index:9999997; top:0px; left:0px; background:#000}
+
+#POP_window{position:absolute; background:#000 url(../img/1_loading.gif) no-repeat center; z-index:9999999; color:#efefef; border:10px solid #1a1a1a; text-align:left; padding-bottom:3px}
+
+#POP_window img{display:block; margin:15px 0 0 15px; border-right:1px solid #ccc; border-bottom:1px solid #ccc; border-top:1px solid #666; border-left:1px solid #666}
+
+#POP_caption{height:25px; padding:7px 30px 10px 25px; float:left; font-weight:bold}
+
+#POP_closeWindow{height:25px; padding:11px 25px 10px 0; float:right}
+
+#POP_closeAjaxWindow{padding:5px 10px 7px 0; margin-bottom:1px; text-align:right; float:right}
+
+#POP_ajaxWindowTitle{float:left; padding:7px 0 5px 10px; margin-bottom:1px}
+
+#POP_title{border-bottom:3px solid #3C3C38; color:#efefef; padding-left:10px; height:27px; background:#000304}
+
+#POP_ajaxContent{clear:both; padding:2px 15px 15px 15px; overflow:auto; text-align:left; line-height:1.4em}
+
+#POP_ajaxContent p{padding:5px 0px 5px 0px}
+
+#POP_load{position:absolute; display:none; height:100px; width:100px; z-index:101}
+
+#POP_HideSelect{z-index:99; position:absolute; top:0; left:0; background-color:#fff; border:none}
+
+#POP_iframeContent{clear:both; border:none; margin-bottom:-1px; margin-top:1px; margin-bottom:1px}
+#naslink{position:absolute; bottom:3px; left:25px; margin:10px 0 0 0; display:block; height:10px; width:150px; color:#3b3b3b; font-size:9px}
+#naslink a:link, 
+#naslink a:visited, 
+#naslink a:active, 
+#naslink a:focus{color:#3b3b3b; padding:2px}
+#naslink a:hover{background:#666; color:#efefef}
+
+#yjlink{position:absolute; bottom:0px; left:-10px; margin:10px 0 0 0; display:block; width:150px; line-height:10px; font-size:9px}
+
+.bot_caption, .bot_captionv{position:absolute; z-index:1000; left:7px; bottom:7px; display:inline; text-align:center; text-transform:capitalize; font-size:13px; height:20px; font-weight:bold; color:#fff; line-height:20px; background:url(../img/caption.png) no-repeat left bottom; font-family:"Trebuchet MS",sans-serif}
+
+.bot_thumb, .bot_thumbv{border:7px solid #e6e5e5}
+.bot_thumb:hover, .bot_thumbv:hover{border:7px solid #252A2E}
+.popbox, .popboxv{position:relative; display:inline-block; overflow:hidden; text-align:center}
+
+.cap_holder{}

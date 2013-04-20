@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>MultimediaBox</name>
+	<author>YouJoomla.com</author>
+	<creationDate>5/14/09</creationDate>
+	<license>commercial</license>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>1.0</version>
+		<description>PLEASE GO TO YOUJOOMLA MULTIMEDIABOX MODULE FOR DESCRIPTION</description>
+			<languages>
+			<language tag="en-GB">en-GB.mod_yj_multimediabox.ini</language>
+		</languages>
+	<files>
+		<filename module="mod_yj_multimediabox">mod_yj_multimediabox.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>				
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>		
+	</files>
+	<params>
+			<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		<param name="code" type="textarea" cols="80" rows="30" default="" label="Plugin code" description="Enter the plugin code"/>
+
+	</params>	
+</install>

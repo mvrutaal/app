@@ -1,0 +1,97 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/* user pages */
+#userlogin_wrap, #userlogout_wrap, #userregister_wrap, #userreminder_wrap {
+	width:100%;
+	overflow:hidden;
+	padding:30px 0;
+	background: url(../images/login_lock.png) no-repeat right center;
+	text-shadow:1px 1px #fff;
+}
+
+#userlogin, #userlogout, #userregister, #userreminder {
+	width:350px;
+	margin:0 auto;
+	overflow:hidden;
+	padding:10px 20px;
+	border:none;
+}
+
+#userlogin label, #userregister label, #userreminder label {
+	font-size:140%;
+}
+
+#userlogin .componentheading, #userregister .componentheading, #userreminder .componentheading {
+	font-size:200%;
+	text-align:center;
+	padding:0;
+	margin:0;
+}
+
+#userlogin .inputbox, #userregister .inputbox, #userreminder .inputbox, #userreminder .required {
+	height:35px;
+	width:100%;
+	font-size:180%;
+}
+
+#userlogin #com-form-login-remember, #form-login-remember {
+	float:left;
+	clear:both;
+	overflow:hidden;
+	display:block;
+	width:100%;
+	text-align:left;
+	position:relative;
+}
+
+#userlogin #remember {
+	margin:0;
+	height:10px;
+	padding:0;
+	position:relative;
+	top:0px;
+	width: 10px;
+}
+
+#form-login-remember #remember {
+	left:-2px;
+	top:0px;
+}
+
+/* Logout */
+#userlogout_wrap {
+	font-size:150%;
+	text-align:center;
+	background: url(../images/logout.png) no-repeat right center;
+	padding:50px 0;
+}
+
+/* Register */
+#userregister_wrap {
+	background: url(../images/register_key.png) no-repeat right center;
+}
+
+#userregister, #userreminder {
+	width:400px;
+}
+
+#userregister .inputbox, #userreminder .required {
+	width:90%;
+}
+
+/* Buttons */
+#userlogin_wrap .button, #userlogout_wrap .button, #userregister_wrap .button, #userreminder_wrap .validate, #userreminder_wrap .required {
+/*	padding:10px 20px;*/
+/*	text-shadow:1px 1px #fff;*/
+}

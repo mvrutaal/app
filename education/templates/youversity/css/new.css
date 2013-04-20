@@ -1,0 +1,69 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/* Creating new color style instructions
+For demo purpose we will use 
+gray.css            LOCATION: sitename/templates/YJtemplate_name/css/
+gray images folder  LOCATION: sitename/templates/YJtemplate_name/images/
+
+
+1. Open templatedetails.xml file located in sitename/templates/template_name/ folder
+
+find param 
+
+
+ <param name="default_color" type="list" default="gray" label="Default Style" description="Change Default Style">
+	 <option value="gray">Gray</option>
+ 
+under
+ 	 <option value="gray">Gray</option>
+add line
+	<option value="blue">Blue</option>
+	
+	
+2. Go to yoursitename/administrator
+
+ Extensions -> Template Manager -> YouJoomla template_name 
+ 
+ In Template settings find  param name Change Default Style.
+ If template is powered by YJSimpleGrid this param is located under accordion tab name Style Settings
+ 
+ From dropdown menu choose Blue and hit apply button. 
+ 
+ 
+
+3. Create new folder  in sitename/templates/template_name/images/  name it blue
+
+
+4. Copy all contents of gray  folder to blue folder
+
+
+5. Open sitename/templates/template_name/css/gray.css
+   save it as blue.css
+
+
+6. Open your site frontpage in browser now 
+   You will see gray style but main css file now is blue.css
+   any change you make to blue.css will now be visible on page refresh
+   
+   
+7. Rename all instances of word gray to word blue in blue.css file
+
+8. Start styling the color codes in blue.css to your own color
+
+9. Edit images in blue images folder to fit your new style. 
+   You can use psd files delivered with your download or downloaded separatly.
+   
+*/
+
+  

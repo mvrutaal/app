@@ -1,0 +1,477 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+.yjsg_param_title{
+font-weight:bold;
+width:370px;
+font-size:12px;
+text-transform:uppercase;
+margin:10px auto;
+text-align:center;
+color:#3a8bc6;
+text-shadow:1px 1px #fff;
+line-height:27px;
+height:27px;
+padding:0;
+background:url(../../images/admin/param_titles_l.gif) no-repeat left center;
+}
+.yjsg_param_title_l{
+background:url(../../images/admin/param_titles.gif) no-repeat right center;
+margin:0;
+height:27px;
+padding:0 15px;
+}
+.yjsg_param_title_blank{
+font-size:13px;
+color:#3a8bc6;
+padding:10px;
+font-weight:bold;
+line-height:19px;
+}
+table.admintable td.paramlist_key{
+border:1px solid #ccc;
+text-shadow:1px 1px #fff;
+}
+.editlinktip{
+border:0;
+}
+/* checkboxes*/
+.option {
+	padding-right:7px;
+	line-height:17px;
+	font-size:11px;
+	font-weight: bold;
+	margin:0 auto 0 auto;
+	width:50px;	
+	cursor:pointer;
+}
+.YJSG_multiple table td .option .check input {
+	margin:0px;
+	width:auto;
+	border:none;
+}
+.option .check { 
+	border: none; 
+	background-repeat: no-repeat; 
+	background-position: center center; 
+	height: 16px; 
+	width: 16px; 
+	float:left;
+	background-image:url(../../images/admin/unlocked.png); 
+	cursor:pointer;
+}
+.check div.selected { 
+	background-image: url(../../images/admin/locked.gif); 
+	border: 0;
+}
+
+.locked{ color:#FF0000; }
+.unloched{ color:#000000; }
+/* elSelect */
+table.admintable td select{
+	font-size:12px;
+	margin-bottom:2px;
+	border:none;
+}
+.elSelect,
+.selectsContainer,
+.selectsContainer .overDiv {
+	width:250px;
+	height:28px;
+	line-height:28px;
+	border:1px #EEE solid;
+	padding:0px;
+	margin:0px;
+}
+.selectsContainer .overDiv{
+	margin-top:-30px;
+	margin-left:1px;
+	height:28px;	
+	border:none;
+	background:url(../../images/admin/semi-transparent.gif);
+	
+}
+* html .selectsContainer .overDiv{ margin-top:-36px; height:35px; }
+.elSelect .selected {
+	background-color:#fff !important;
+	color:#3a8bc6 !important;
+	text-shadow:none;
+}
+.elSelect .clear {
+	clear:both;
+}
+.elSelect .selectedOption {
+	float:left;
+	padding:2px 0 0 6px;
+	width:200px;
+	font-size:13px;
+	font-weight:normal;
+	color:#3a8bc6;
+	text-shadow:none;
+	overflow:hidden;
+	text-transform:capitalize;
+}
+.elSelect .dropDown {
+	width: 23px;
+	height: 35px;
+	float: right;
+	background:url(../../images/admin/select_arrow.png) no-repeat center 2px;
+	cursor:pointer;
+	text-transform:capitalize;
+}
+.elSelect .optionsContainerTop {
+	position:absolute;
+	display:block;
+	background:url(../../images/admin/top_center.gif) repeat-x 0% 0%;
+	width:100%;
+	height:5px;
+	z-index:100;
+}
+.elSelect .optionsContainerTop div {
+	background:url(../../images/admin/top_left.gif) no-repeat 0% 0%;
+	width:100%;
+	height:5px;
+}
+.elSelect .optionsContainerTop div div {
+	background:url(../../images/admin/top_right.gif) no-repeat 100% 0%;
+	width:100%;
+	height:5px;
+}
+.elSelect .optionsContainerBottom {
+	position:absolute;
+	margin:-5px 0 0 0;
+	background:url(../../images/admin/bottom_center.gif) repeat-x 0% 0%;
+	width:100%;
+	height:5px;
+	z-index:100;
+}
+.elSelect .optionsContainerBottom div {
+	background:url(../../images/admin/bottom_left.gif) no-repeat 0% 0%;
+	width:100%;
+	height:5px;
+}
+.elSelect .optionsContainerBottom div div {
+	background:url(../../images/admin/bottom_right.gif) no-repeat 100% 0%;
+	width:100%;
+	height:5px;
+}
+.elSelect .optionsContainer {
+	position:absolute;
+	display:none;
+	z-index:10000;
+	/*background:#ECF1F2;	*/
+}
+.elSelect .option {
+	padding:4px 0px 5px 5px;
+	background-color:#d7d7d7;
+	border-left:solid 1px #d7d7d7;
+	border-right:solid 1px #d7d7d7;
+	text-align:left;
+	font-size:13px;
+	font-weight:normal;
+	text-shadow:1px 1px #efefef;
+	color:#939494;
+	cursor:pointer;
+	margin:0px;
+	margin-top:0;
+	width:250px;
+	z-index:1;
+	text-transform:capitalize;
+	
+}
+.elSelect .disabled {
+	background-color:#C0CCCF;
+	border-left:solid 1px #d7d7d7;
+	border-right:solid 1px #d7d7d7;
+	color:#3a8bc6;
+	text-shadow:none;
+} 
+input.serialize_multiple,
+input.text_area,
+textarea.text_area{
+border:2px solid #eee;
+font-size:12px;
+}
+/* accordion */
+table.admintable{
+	width:100%;
+}
+
+/* inline text boxes styling */
+.YJSG_multiple table{
+	border-collapse:collapse;
+
+}
+table.admintable .YJSG_multiple table td{
+	text-align:center;
+	padding:0px 5px 0px;
+	width:80px;
+	
+}
+/*table.admintable .YJSG_multiple table td.even{ background:#EEE; margin:0 5px 0 0!important;}*/
+table.admintable .YJSG_multiple table td.odd{ background:#DADADA;}
+.YJSG_multiple table td label{
+	display:block;
+	margin-top:5px;
+	margin-bottom:2px;
+}
+.YJSG_multiple table td input{
+	margin-bottom:5px;
+	width:35px;
+}
+.YJSG_multiple{
+width:390px;
+margin:0 auto;
+text-align:center;
+}
+div#params_yjsg_header_width,
+div#params_yjsg_yjsgbodytbottom_width,
+div#params_yjsg_bodytop_width{
+margin:0 0 0 0;
+}
+.box_0,.box_1,
+.box_2,.box_3,
+.box_4,.box_5{
+background:url(../../images/admin/modboxes.png) no-repeat left top;
+float:left;
+clear:right;
+width:73px;
+height:62px;
+padding:8px 0 0 0;
+text-align:center;
+margin:5px 5px 5px 0;
+}
+.box_1,.box_3,.box_5{
+/*background:url(../../images/admin/modboxes2.png) no-repeat left top;*/
+}
+#params_yjsg_header_width .box_0,
+#params_yjsg_header_width .box_1,
+#params_yjsg_header_width .box_2,
+#params_yjsg_bodytop_width .box_0,
+#params_yjsg_bodytop_width .box_1,
+#params_yjsg_bodytop_width .box_2,
+#params_yjsg_yjsgbodytbottom_width .box_0,
+#params_yjsg_yjsgbodytbottom_width .box_1,
+#params_yjsg_yjsgbodytbottom_width .box_2{
+width:124px;
+background:url(../../images/admin/modboxes2.png) no-repeat left top;
+}
+#params_yjsg_header_width{
+}
+
+.box_0 label,.box_1 label,
+.box_2 label,.box_3 label,
+.box_4 label,.box_5 label{
+color:#3a8bc6;
+text-transform:uppercase;
+text-shadow:1px 1px #fff;
+font-weight:bold !important;
+margin:0 0 1px 0;
+overflow:hidden;
+font-size:12px;
+}
+
+a.YJSG_reset-values{
+display:block;
+clear:both;
+width:65px;
+height:20px;
+margin:0 auto 5px auto;
+text-indent:-999px;
+overflow:hidden;
+background: url(../../images/admin/reset.png) no-repeat center center;
+}
+a:active,
+a:focus {outline:0;}
+#tidi_14,
+#tidi_21,
+#tidi_30,
+#tidi_49,
+#tidi_61,
+#tidi_67,
+#tidi_91,
+#tidi_119{
+border:0 !important;
+}
+/* general toggler styles */
+.toggler_l{
+height:40px;
+background: url(../../images/admin/tog_l.png) no-repeat left center;
+margin:5px 0;
+}
+.toggler_r{
+background: url(../../images/admin/tog_r.png) no-repeat right center;
+height:40px;
+}
+.YJ_toggler {color:#929191; font-weight:normal; font-size:20px; text-shadow:1px 1px #fff; height:40px;line-height:40px; padding-left:45px; cursor:pointer; background-image:url(../../images/admin/arrows.png); background-repeat:no-repeat; background-position: left top; margin:0; }
+/* styles for active toggler */
+.YJ_toggler_active {color:#3a8bc6; background-image:url(../../images/admin/arrows.png); background-repeat:no-repeat; background-position: left bottom;}
+/* styles for hovered toggler */
+.YJ_toggler_hover {}
+
+.YJ_params{
+/*background: url(../../images/admin/tl.png) no-repeat left top;*/
+padding:0px;
+margin:0px;
+overflow:hidden;
+}
+.YJ_params .tl{
+background: url(../../images/admin/tl.png) no-repeat left top;
+}
+.YJ_params .tr{
+background: url(../../images/admin/tr.png) no-repeat right top;
+}
+.YJ_params .bl{
+background: url(../../images/admin/bl.png) no-repeat left bottom;
+}
+.YJ_params .br{
+background: url(../../images/admin/br.png) no-repeat right bottom;
+padding:10px;
+}
+.YJ_params .yjsgdetial{
+text-align:center;
+font-size:24px;
+text-shadow:1px 1px #fff;
+color:#444444;
+padding:0px 0 0px 0;
+margin:0 0 20px 0;
+}
+.YJ_params .paramlist_key{
+text-align:left !important;
+margin:5px 3px 5px 0px;
+padding:10px 35px 10px 5px !important;
+line-height:40px;
+background-color:#fff !important;
+border-top:1px solid #fff !important;
+border-right:1px solid #ccc !important;
+border-bottom:1px solid #ccc !important;
+border-left:1px solid #fff !important;
+text-shadow:1px 1px #fff !important;
+}
+.YJ_params .paramlist_value{
+padding:0 0 0 5px !important;
+margin:0;
+background:#fff;
+border-top:1px solid #fff !important;
+border-left:1px solid #fff !important;
+border-bottom:1px solid #ccc !important;
+border-right:1px solid #fff !important;
+width:60%;
+}
+span.editlinktip label{
+display:block;
+background: url(../../images/admin/toolinfo.png) no-repeat right center;
+width:90%;
+padding:0 30px 0 0;
+font-size:12px;
+}
+
+/* Tooltips */
+.tool-tip {
+    color: #efefef;
+	width: 243px !important;
+	background:none !important;
+	border:none !important;
+	padding:0 !important;
+    z-index: 53000!important;
+    font-size:12px;
+	margin:0!important;
+	
+}
+
+.tool-title {
+    font-weight: bold !important;
+	font-size: 13px !important;
+	margin: 0 !important;
+	text-shadow:1px 1px #fff !important;
+	color: #3a8bc6 !important;
+	padding:5px 5px 5px 10px!important;
+	background: url(../../images/admin/bubble.png) no-repeat left top !important;
+	text-transform:uppercase  !important;
+	margin:0!important;
+	width: 228px !important;
+
+}
+
+.tool-text {
+    font-weight: bold !important;
+	text-shadow:1px 1px #fff !important;
+	font-size: 12px !important;
+	padding:10px 10px 10px 10px!important;
+	color:#7e7b7b !important;
+	line-height:18px !important;
+	background: url(../../images/admin/bubble.png)  no-repeat bottom left !important;
+    width: 223px !important;
+	z-index: 53000 !important;
+}
+#paramsYJg1_module_style-lbl{
+margin:-15px 0 -15px 0 ;
+display:block;
+}
+/* grid disabled*/
+.disabled_text{
+font-weight:bold;
+font-size:13px;
+color:#ff0000;
+padding:10px 0;
+text-transform:uppercase;
+}
+h1.admin_t_name{
+text-align:center;
+}
+div.col_0    { width: 33%!important; float:left;}
+div.col_1    { width: 67%!important; float:right;overflow:hidden;}
+#content-box .padding  { padding: 10px 10px 0 10px!important; }
+fieldset#myForm_0 .adminform,
+fieldset#myForm_0 .adminform table.admintable{
+overflow:hidden;
+}
+div#element-box div.m {
+  padding: 5px 0px!important;
+}
+#temp_desc{
+overflow:hidden;
+margin:0 auto;
+display:block;
+text-align:center;
+float:none;
+}
+fieldset#myForm_0 .key,
+.col width-50 .key{
+display:none;
+width:0px;
+}
+#temp_det{
+float:left;
+text-align:left;
+display:block;
+overflow:hidden;
+}
+#temp_det h3{
+font-size:18px;
+color:#3a8bc6;
+}
+#temp_det p{
+font-size:12px;
+font-weight:bold;
+}
+#temp_det ul li{
+font-size:12px;
+padding:0 0 5px 0;
+}
+#temp_det a:hover,
+#temp_det a:focus,
+#temp_desc a:hover,
+temp_desc a:focus{
+text-decoration:none;
+}

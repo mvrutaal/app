@@ -1,0 +1,395 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*----------------------------------------------------------------------
+Common Elements
+----------------------------------------------------------------------*/
+li.even, li.odd {
+	background:none;
+	border-bottom:1px solid #dfdfdf;
+	margin:0;
+	padding:5px 0;
+}
+div.itemSocialLinksBlock, div.catItemTagsBlock, div.itemCategory, div.itemHitsTwitter {
+	border-bottom:1px solid #dfdfdf;
+}
+/*----------------------------------------------------------------------
+Sub cats  html/com_k2/templates/template_name/category.php
+----------------------------------------------------------------------*/
+div.subCategory {
+	background:none;
+	border:none;
+	margin:4px;
+	padding:8px;
+}
+/* sub cat image*/
+div.subCategory a.subCategoryImage img, div.subCategory a.subCategoryImage:hover img {
+	background:#eeeeee;
+	padding:4px;
+	border:none;
+	margin:0 8px 0 0;
+	border:1px solid #dbdbdb;
+}
+div.subCategory a.subCategoryImage:hover img{
+	background:#bfbfbf;
+	border:1px solid #b3b3b3;
+}
+/* sub cat title */
+div.subCategory h2 {
+	text-align:center;
+}
+/* sub cat read more */
+a.subCategoryMore, a.subCategoryMore:visited {
+	display:block;
+	width:100px;
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	font-weight:bold;
+}
+/*----------------------------------------------------------------------
+cat item view  html/com_k2/templates/template_name/category_item.php
+----------------------------------------------------------------------*/
+.catItemView {
+	padding:10px!important;
+	border:1px solid #e3e3e3;
+	background:#f4f4f4;
+	margin:10px;
+}
+div.itemListCategory {
+	background:#eee;
+	border:1px solid #ddd;
+	margin:4px 10px;
+	padding:0 8px;
+}
+div.itemListCategory h2 {
+	line-height:18px;
+}
+/* item title*/
+.k2_cat_item_title {
+	display:block;
+	overflow:hidden;
+	clear:both;
+	margin:10px auto 0 auto;
+}
+.k2_cat_item_title_l {
+	padding:0;
+	height:33px;
+	border-bottom:1px dashed #dfdfdf;
+}
+div.catItemHeader h3.catItemTitle {
+	margin:0;
+	padding:0;
+	line-height:inherit;
+}
+.catItemDateCreated {
+	padding:0 0 0 5px;
+}
+/* item image */
+span.catItemImage img {
+	border:1px solid #e4e4e4;
+	background:#eee;
+	padding:3px;
+}
+div.catItemImageBlock {
+	padding:0;
+	margin:0;
+}
+/* author and cat name*/
+.catItemdetails {
+	display:block;
+	overflow:hidden;
+	clear:both;
+	padding:0 5px;
+}
+.catItemAuthor, .catIdtemCategory {
+	float:left;
+	font-size:90%;
+	padding:0 0 0 0;
+}
+.catIdtemCategory {
+	float:right;
+	padding:0 0 0 0;
+}
+/* tags*/
+div.catItemTagsBlock {
+	overflow:hidden;
+	display:block;
+	clear:both;
+	border-bottom:1px solid #dfdfdf;
+}
+div.catItemTagsBlock span {
+	text-align:left;
+	font-weight:bold;
+	float:left;
+	padding:0;
+	margin:0 10px 0 0;
+}
+div.catItemTagsBlock a {
+	display:block;
+	float:left;
+	padding:2px 3px;
+	margin:0 4px 3px 0;
+	background:#eee;
+	text-align:center;
+	border:1px solid #dfdfdf;
+}
+/*introtext*/
+div.catItemIntroText {
+	padding:5px;
+}
+/*----------------------------------------------------------------------
+item view html/com_k2/templates/template_name/item.php
+----------------------------------------------------------------------*/
+.itemView {
+	padding:10px!important
+}
+div.itemHeader h2.itemTitle {
+	font-weight:normal;
+	line-height:inherit;
+	clear:both;
+}
+span.itemDateCreated {
+	clear:both!important;
+	display:block!important;
+	padding:0 0 0 8px;
+}
+/* author*/
+div.itemHeader span.itemAuthor {
+	padding:10px 0 0 8px;
+	display:block;
+	clear:both;
+}
+/* rating*/
+div.itemRatingBlock {
+	padding-left:8px;
+}
+/* toolbar fot res, print ect*/
+div.itemToolbar {
+	background:none;
+	border-top:none;
+	border-bottom:1px solid #dfdfdf;
+}
+div.itemToolbar ul {
+	float:left;
+}
+div.itemToolbar ul li {
+	border-right:1px solid #ccc;
+	border-left:none;
+}
+div.itemImageBlock {
+	float:left;
+}
+div.itemImageBlock img {
+	float:left!important;
+	border:1px solid #e4e4e4;
+	background:#eee;
+	padding:3px;
+}
+div.itemIntroText {
+}
+div.itemFullText {
+	padding:5px 0 0 0;
+}
+/* item tags*/
+div.itemTagsBlock {
+	overflow:hidden;
+	display:block;
+	clear:both;
+	border-bottom:1px solid #dfdfdf;
+}
+div.itemTagsBlock span {
+	text-align:left;
+	font-weight:bold;
+	float:left;
+	padding:0;
+	margin:0 10px 0 0;
+}
+.itemTagsBlock a {
+	display:block;
+	float:left;
+	margin:0 10px 0 0;
+}
+/* item social links */
+.itemSocialLinks li {
+	background:none
+}
+/* item author*/
+div.itemAuthorBlock {
+	background:#F4F4F4;
+	border:1px solid #e4e4e4;
+}
+/* item comments */
+div.itemComments {
+	background:#F4F4F4;
+	border:1px solid #e4e4e4;
+}
+div.itemComments ul.itemCommentsList li.authorResponse {
+	background:#eee;
+	border:1px solid #dfdfdf;
+	margin:5px 0;
+}
+div.itemCommentsForm p.itemCommentsFormNotes {
+	border-top:1px solid #dfdfdf;
+}
+/*----------------------------------------------------------------------
+k2 user items view    html/com_k2/templates/user.php
+----------------------------------------------------------------------*/
+div.userView {
+	padding:5px 10px 10px 10px!important
+}
+/* user block */
+div.userBlock {
+	background:#F4F4F4;
+	overflow:hidden;
+	clear:both;
+	border:1px solid #e4e4e4;
+}
+div.userBlock p.userAdditionalInfo {
+	border-top:1px solid #dfdfdf;
+}
+/* item title */
+div.userItemHeader h3.userItemTitle {
+	font-weight:normal;
+	line-height:inherit;
+}
+/* item image*/
+div.userItemImageBlock {
+	float:left;
+}
+div.userItemImageBlock img {
+	background:#eee;
+	border:1px solid #e4e4e4;
+	padding:3px;
+}
+div.userItemIntroText{
+	padding:0;
+}
+div.userItemBody{
+	background:#F4F4F4;
+	border:1px solid #e4e4e4;
+	padding:10px;
+}
+/* tags and item cat blocks*/
+div.userItemTagsBlock, div.userItemCategory {
+	overflow:hidden;
+	clear:both;
+	border-bottom:1px solid #dfdfdf;
+}
+/*----------------------------------------------------------------------
+k2 generic view    html/com_k2/templates/generic.php
+----------------------------------------------------------------------*/
+div.genericView {
+	padding:5px 10px 10px 10px!important
+}
+div.genericItemView {
+	border-bottom:1px solid #dfdfdf;
+}
+/* item title */
+div.genericItemHeader h2.genericItemTitle {
+	font-weight:normal;
+	line-height:inherit;
+}
+/* item image*/
+div.genericItemImageBlock {
+	float:left;
+}
+div.genericItemImageBlock img {
+	border:none;
+}
+/*----------------------------------------------------------------------
+k2 content module
+----------------------------------------------------------------------*/
+.k2ItemsBlock {
+	padding:0px;
+}
+.k2ItemsBlock li.even, .k2ItemsBlock li.odd {
+	background:#F4F4F4;
+	border:1px solid #e4e4e4;
+	margin:5px 0;
+	padding:3px;
+}
+.k2ItemsBlock a.moduleItemTitle, .k2ItemsBlock a.moduleItemTitle:visited {
+	font-size:115%;
+	display:block;
+	margin:10px 0 10px 0!important;
+}
+.k2ItemsBlock a.moduleItemImage {
+	float:left;
+	background:none;
+}
+div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img {
+	padding:0;
+	margin:10px 0;
+}
+.k2ItemsBlock a.moduleItemImage img {
+	border:2px solid #000;
+	margin-top:3px!important;
+	float:left!important;
+}
+.k2ItemsBlock .moduleItemAuthor{
+	margin:10px 0 0 0;
+}
+/*----------------------------------------------------------------------
+k2 cats menu
+----------------------------------------------------------------------*/
+.k2CategoriesListBlock ul, .k2CategoriesListBlock ul.level0, .k2CategoriesListBlock ul.level1 {
+	list-style:none;
+	margin:0px;
+	padding:0;
+}
+.k2CategoriesListBlock ul li a{
+	background:url(../images/turquoise/mainlevel.gif) no-repeat left top;
+}
+.k2CategoriesListBlock ul li, .k2CategoriesListBlock ul li:hover {
+	list-style-type:none;
+	background-image:none;
+	padding:0;
+	text-align:left;
+}
+.k2CategoriesListBlock ul li a {
+	height:26px;
+	line-height:20px;
+	text-decoration:none;
+	display:block;
+	font-size:11px;
+	text-decoration:none;
+	text-indent:22px;
+	padding-top:5px;
+}
+/*----------------------------------------------------------------------
+k2 comments module
+----------------------------------------------------------------------*/
+div.k2LatestCommentsBlock {
+	padding:0;
+	margin:0;
+}
+.k2LatestCommentsBlock li.even, .k2LatestCommentsBlock li.odd {
+	background:none;
+	border:none;
+}
+/*----------------------------------------------------------------------
+k2 COLOR CSS
+----------------------------------------------------------------------*/
+.k2CategoriesListBlock ul.level1 a {
+}
+.k2CategoriesListBlock ul li a {
+	background:url(../images/turquoise/mainlevel.gif) no-repeat left top
+}
+.k2CategoriesListBlock ul li a:hover, div.k2CategoriesListBlock ul li.activeCategory a, div.k2CategoriesListBlock ul li.activeCategory a:hover {
+	color:#05d7dd;
+	background-position:left bottom
+}
+div.catItemTagsBlock span {
+	color:#888888;
+}

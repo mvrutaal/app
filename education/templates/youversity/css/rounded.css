@@ -1,0 +1,92 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*round mods gutter */
+.yjroundout {
+	margin:0 0 5px 0px;
+	padding:0 5px;
+	overflow:hidden;
+}
+
+/* end */
+.insetsholder_3 .yjroundout, .insetsholder_2 .yjroundout {
+	margin:5px 0 0 0;
+}
+
+.yjround {
+	position:relative;
+	margin:0px auto;
+	max-width:1185px; /* based on image dimensions */
+	z-index:1;
+	margin-left:10px; /* default, width of left corner */
+	margin-bottom:0; /* spacing under yjround */
+}
+
+.yjround h4 {
+	margin:0;/* margins will blow out backgrounds, leaving whitespace. */
+	padding:11px 0 0px 0;
+	font-size:150%;
+}
+
+.yjround_in {
+	padding:4px 0 0 0;
+	overflow:hidden;
+}
+
+.yjround .content {
+	position:relative;
+	padding:0px 10px 0px 0px;
+}
+
+.yjround .content, .yjround .t, .yjround .b, .yjround .b div {
+	background-position:top right;
+	background-repeat:no-repeat;
+}
+
+.yjround .t {
+	/* top+left vertical slice */
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:10px; /* top slice width */
+	margin-left:-10px;
+	height:100%;
+	background-position:top left;
+}
+
+.yjround .b {
+	/* bottom */
+ position:relative;
+	width:100%;
+}
+
+.yjround .b, .yjround .b div.bin {
+	height:20px; /* height of bottom cap/shade */
+	font-size:1px;
+}
+
+.yjround .b {
+	background-position:bottom right;
+}
+
+.yjround .b div.bin {
+	position:relative;
+	width:10px; /* bottom left corner width */
+	margin-left:-10px;
+	background-position:bottom left;
+}
+
+.yjround p, .yjround form {
+	margin:0px; /* margins will blow out backgrounds, leaving whitespace. */
+	padding:0.5em 0px 0.5em 0px;
+}

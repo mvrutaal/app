@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>YJ Images Slider V3</name>
+	<author>Youjoomla LLC</author>
+	<creationDate>3-4-2011</creationDate>
+	<license>Commercial</license>
+	<authorEmail>youjoomla@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>1.0.1</version>
+	<description>PLEASE GO TO YJ IMAGES SLIDER V3.0 MODULE FOR DESCRIPTION</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_yjis3.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_yjis3">mod_yjis3.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>elements</folder>
+		<folder>src</folder>
+		<folder>img</folder>
+		<folder>libs</folder>
+	</files>
+	<params addpath="/modules/mod_yjis3/elements/">
+		<param name="handler" type="yjhandler"/>
+		<param type="spacer" default="&lt;strong&gt;GLOBAL SLIDE SETTINGS&lt;/strong&gt;" />
+		<param name="moduleclass_sfx" type="text" default="_yjis" label="CSS-suffix class of the module" description="Suffix which will be used in description of class of style (CSS) of the module. It allows to use individual style of the module." />
+		<param name="is_copy" type="text" default="" label="IS THIS A MODULE COPY?" description="Use this param only if you run more than 1 module instance on same page. If this is a copy that is alone on different page you do not need to define this param. You can use up to 5 copys on same page. Add suffix: _1, _2 , _3 ,_4 ,_5" />
+		<param name="swidth" type="text" default="600" label="Slide width (px):" description="Slide width (px)" />
+		<param name="sheight" type="text" default="250" label="Slide height (px):" description="Slide height (px)" />
+		<param name="sorient" type="list" default="0" label="Slide orientation" description="Slide orientation">
+			<option value="0">vertical</option>
+			<option value="1">horizontal</option>
+		</param>
+		<param name="type_slider" type="list" default="0" label="Slide Type" description="Type slider">
+			<option value="0">fade</option>
+			<option value="1">scroll</option>
+			<option value="2">scrollfade</option>
+		</param>
+		<param name="start_slide" type="list" default="0" label="Start slide on page load" description="Start slide on page load">
+			<option value="0">yes</option>
+			<option value="1">no</option>
+		</param>
+		<param name="stime" type="text" default="6000" label="Slide time:" description="Slide time" />
+		<param name="sduration" type="text" default="600" label="Slide duration:" description="Slide duration" />
+		<param name="smenu" type="list" default="0" label="Show slide navigation options" description="Show slide navigation arrows.( left ,right )">
+			<option value="0">yes</option>
+			<option value="1">no</option>
+		</param>
+		<param name="pagination" type="list" default="1" label="Show slide pagination" description="Show slide pagination.( slide 1,slide2...)">
+			<option value="0">yes</option>
+			<option value="1">no</option>
+		</param>
+		<param name="balons" type="list" default="0" label="Show slide tool tip" description="Show slide tool tip">
+			<option value="0">yes</option>
+			<option value="1">no</option>
+		</param>
+		<param name="order" type="list" default="0" label="Slides ordering" description="Slide ordering">
+			<option value="0">By slide ordering</option>
+			<option value="1">Random</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 1 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_1" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 1 image from 'upload_slides' folder" description="Select slide 1 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_1" type="text" size="100" default="" label="Slide 1 title" description="Slide 1 title. If left empty it will not be displayed" />
+		<param name="slide_description_1" type="text" size="100" default="" label="Slide 1 Description" description="Slide 1 description. If left empty it will not be displayed" />
+		<param name="slide_intro_1" type="textarea" cols="80" rows="5" default="" label="Slide 1 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 1&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_1" type="list"  default="0" label="Activate Mbox for slide 1" description="Activate Mbox for slide 1." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_1" type="text" size="100" default="" label="Mbox link for slide 1" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_1" type="list" default="0" label="Mbox link type for slide 1" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_1" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_1" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_1" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_1" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 1 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_1" type="text" size="100" default="" label="Slide 1 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_1" type="list" default="0" label="Open slide 1 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 2 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_2" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 2 image from 'upload_slides' folder" description="Select slide 2 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_2" type="text" size="100" default="" label="Slide 2 title" description="Slide 2 title. If left empty it will not be displayed" />
+		<param name="slide_description_2" type="text" size="100" default="" label="Slide 2 Description" description="Slide 2 description. If left empty it will not be displayed" />
+		<param name="slide_intro_2" type="textarea" cols="80" rows="5" default="" label="Slide 2 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 2&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_2" type="list"  default="0" label="Activate Mbox for slide 2" description="Activate Mbox for slide 2." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_2" type="text" size="100" default="" label="Mbox link for slide 2" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_2" type="list" default="0" label="Mbox link type for slide 2" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_2" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_2" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_2" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_2" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 2 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_2" type="text" size="100" default="" label="Slide 2 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_2" type="list" default="0" label="Open slide 2 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 3 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_3" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 3 image from 'upload_slides' folder" description="Select slide 3 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_3" type="text" size="100" default="" label="Slide 3 title" description="Slide 3 title. If left empty it will not be displayed" />
+		<param name="slide_description_3" type="text" size="100" default="" label="Slide 3 Description" description="Slide 3 description. If left empty it will not be displayed" />
+		<param name="slide_intro_3" type="textarea" cols="80" rows="5" default="" label="Slide 3 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 3&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_3" type="list"  default="0" label="Activate Mbox for slide 3" description="Activate Mbox for slide 3." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_3" type="text" size="100" default="" label="Mbox link for slide 3" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_3" type="list" default="0" label="Mbox link type for slide 3" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_3" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_3" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_3" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_3" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 3 options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_link_3" type="text" size="100" default="" label="Slide 3 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_3" type="list" default="0" label="Open slide 3 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 4 OPTIONS&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_image_4" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 4 image from 'upload_slides' folder" description="Select slide 4 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_4" type="text" size="100" default="" label="Slide 4 title" description="Slide 4 title. If left empty it will not be displayed" />
+		<param name="slide_description_4" type="text" size="100" default="" label="Slide 4 Description" description="Slide 4 description. If left empty it will not be displayed" />
+		<param name="slide_intro_4" type="textarea" cols="80" rows="5" default="" label="Slide 4 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 4&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_4" type="list"  default="0" label="Activate Mbox for slide 4" description="Activate Mbox for slide 4." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_4" type="text" size="100" default="" label="Mbox link for slide 4" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_4" type="list" default="0" label="Mbox link type for slide 4" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_4" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_4" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_4" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_4" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 4 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_4" type="text" size="100" default="" label="Slide 4 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_4" type="list" default="0" label="Open slide 4 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 5 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_5" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 5 image from 'upload_slides' folder" description="Select slide 5 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_5" type="text" size="100" default="" label="Slide 5 title" description="Slide 5 title. If left empty it will not be displayed" />
+		<param name="slide_description_5" type="text" size="100" default="" label="Slide 5 Description" description="Slide 5 description. If left empty it will not be displayed" />
+		<param name="slide_intro_5" type="textarea" cols="80" rows="5" default="" label="Slide 5 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 5&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_5" type="list"  default="0" label="Activate Mbox for slide 5" description="Activate Mbox for slide 5." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_5" type="text" size="100" default="" label="Mbox link for slide 5" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_5" type="list" default="0" label="Mbox link type for slide 5" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_5" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_5" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_5" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_5" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 5 options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_link_5" type="text" size="100" default="" label="Slide 5 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_5" type="list" default="0" label="Open slide 5 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 6 OPTIONS&lt;/strong&gt;&lt;font&gt;"   />
+		<param name="slide_image_6" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 6 image from 'upload_slides' folder" description="Select slide 6 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_6" type="text" size="100" default="" label="Slide 6 title" description="Slide 6 title. If left empty it will not be displayed" />
+		<param name="slide_description_6" type="text" size="100" default="" label="Slide 6 Description" description="Slide 6 description. If left empty it will not be displayed" />
+		<param name="slide_intro_6" type="textarea" cols="80" rows="5" default="" label="Slide 6 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 6&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="mbox_6" type="list"  default="0" label="Activate Mbox for slide 6" description="Activate Mbox for slide 6." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_6" type="text" size="100" default="" label="Mbox link for slide 6" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_6" type="list" default="0" label="Mbox link type for slide 6" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_6" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_6" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="image_group_6" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_6" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 6 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_6" type="text" size="100" default="" label="Slide 6 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_6" type="list" default="0" label="Open slide 6 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 7 OPTIONS&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_image_7" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 7 image from 'upload_slides' folder" description="Select slide 7 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_7" type="text" size="100" default="" label="Slide 7 title" description="Slide 7 title. If left empty it will not be displayed" />
+		<param name="slide_description_7" type="text" size="100" default="" label="Slide 7 Description" description="Slide 7 description. If left empty it will not be displayed" />
+		<param name="slide_intro_7" type="textarea" cols="80" rows="5" default="" label="Slide 7 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 7&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="mbox_7" type="list"  default="0" label="Activate Mbox for slide 7" description="Activate Mbox for slide 7." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_7" type="text" size="100" default="" label="Mbox link for slide 7" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_7" type="list" default="0" label="Mbox link type for slide 7" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_7" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_7" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_7" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_7" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 7 options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_link_7" type="text" size="100" default="" label="Slide 7 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_7" type="list" default="0" label="Open slide 7 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 8 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_8" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 8 image from 'upload_slides' folder" description="Select slide 8 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_8" type="text" size="100" default="" label="Slide 8 title" description="Slide 8 title. If left empty it will not be displayed" />
+		<param name="slide_description_8" type="text" size="100" default="" label="Slide 8 Description" description="Slide 8 description. If left empty it will not be displayed" />
+		<param name="slide_intro_8" type="textarea" cols="80" rows="5" default="" label="Slide 8 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 8&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_8" type="list"  default="0" label="Activate Mbox for slide 8" description="Activate Mbox for slide 8." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_8" type="text" size="100" default="" label="Mbox link for slide 8" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_8" type="list" default="0" label="Mbox link type for slide 8" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_8" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_8" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_8" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_8" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 8 options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_link_8" type="text" size="100" default="" label="Slide 8 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_8" type="list" default="0" label="Open slide 8 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 9 OPTIONS&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_image_9" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 9 image from 'upload_slides' folder" description="Select slide 9 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_9" type="text" size="100" default="" label="Slide 9 title" description="Slide 9 title. If left empty it will not be displayed" />
+		<param name="slide_description_9" type="text" size="100" default="" label="Slide 9 Description" description="Slide 9 description. If left empty it will not be displayed" />
+		<param name="slide_intro_9" type="textarea" cols="80" rows="5" default="" label="Slide 9 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 9&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="mbox_9" type="list"  default="0" label="Activate Mbox for slide 9" description="Activate Mbox for slide 9." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_9" type="text" size="100" default="" label="Mbox link for slide 9" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_9" type="list" default="0" label="Mbox link type for slide 9" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_9" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_9" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="image_group_9" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_9" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 9 options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_link_9" type="text" size="100" default="" label="Slide 9 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_9" type="list" default="0" label="Open slide 9 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 10 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_10" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 10 image from 'upload_slides' folder" description="Select slide 10 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_10" type="text" size="100" default="" label="Slide 10 title" description="Slide 10 title. If left empty it will not be displayed" />
+		<param name="slide_description_10" type="text" size="100" default="" label="Slide 10 Description" description="Slide 10 description. If left empty it will not be displayed" />
+		<param name="slide_intro_10" type="textarea" cols="80" rows="5" default="" label="Slide 10 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 10&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="mbox_10" type="list"  default="0" label="Activate Mbox for slide 10" description="Activate Mbox for slide 10." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_10" type="text" size="100" default="" label="Mbox link for slide 10" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_10" type="list" default="0" label="Mbox link type for slide 10" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_10" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_10" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_10" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_10" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 10 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_10" type="text" size="100" default="" label="Slide 10 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_10" type="list" default="0" label="Open slide 10 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 11 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_11" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 11 image from 'upload_slides' folder" description="Select slide 11 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_11" type="text" size="100" default="" label="Slide 11 title" description="Slide 11 title. If left empty it will not be displayed" />
+		<param name="slide_description_11" type="text" size="100" default="" label="Slide 11 Description" description="Slide 11 description. If left empty it will not be displayed" />
+		<param name="slide_intro_11" type="textarea" cols="80" rows="5" default="" label="Slide 11 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 11&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_11" type="list"  default="0" label="Activate Mbox for slide 11" description="Activate Mbox for slide 11." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_11" type="text" size="100" default="" label="Mbox link for slide 11" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_11" type="list" default="0" label="Mbox link type for slide 11" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_11" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_11" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_11" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_11" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 11 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_11" type="text" size="100" default="" label="Slide 11 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_11" type="list" default="0" label="Open slide 11 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 12 OPTIONS&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_image_12" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 12 image from 'upload_slides' folder" description="Select slide 12 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_12" type="text" size="100" default="" label="Slide 12 title" description="Slide 12 title. If left empty it will not be displayed" />
+		<param name="slide_description_12" type="text" size="100" default="" label="Slide 12 Description" description="Slide 12 description. If left empty it will not be displayed" />
+		<param name="slide_intro_12" type="textarea" cols="80" rows="5" default="" label="Slide 12 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 12&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_12" type="list"  default="0" label="Activate Mbox for slide 12" description="Activate Mbox for slide 12." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_12" type="text" size="100" default="" label="Mbox link for slide 12" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_12" type="list" default="0" label="Mbox link type for slide 12" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_12" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_12" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_12" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_12" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 12 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_12" type="text" size="100" default="" label="Slide 12 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_12" type="list" default="0" label="Open slide 12 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 13 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_13" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 13 image from 'upload_slides' folder" description="Select slide 13 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_13" type="text" size="100" default="" label="Slide 13 title" description="Slide 13 title. If left empty it will not be displayed" />
+		<param name="slide_description_13" type="text" size="100" default="" label="Slide 13 Description" description="Slide 13 description. If left empty it will not be displayed" />
+		<param name="slide_intro_13" type="textarea" cols="80" rows="5" default="" label="Slide 13 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 13&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_13" type="list"  default="0" label="Activate Mbox for slide 13" description="Activate Mbox for slide 13." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_13" type="text" size="100" default="" label="Mbox link for slide 13" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_13" type="list" default="0" label="Mbox link type for slide 13" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_13" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_13" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_13" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_13" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 13 options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_link_13" type="text" size="100" default="" label="Slide 13 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_13" type="list" default="0" label="Open slide 13 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 14 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_14" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 14 image from 'upload_slides' folder" description="Select slide 14 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_14" type="text" size="100" default="" label="Slide 14 title" description="Slide 14 title. If left empty it will not be displayed" />
+		<param name="slide_description_14" type="text" size="100" default="" label="Slide 14 Description" description="Slide 14 description. If left empty it will not be displayed" />
+		<param name="slide_intro_14" type="textarea" cols="80" rows="5" default="" label="Slide 14 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 14&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_14" type="list"  default="0" label="Activate Mbox for slide 14" description="Activate Mbox for slide 14." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_14" type="text" size="100" default="" label="Mbox link for slide 14" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_14" type="list" default="0" label="Mbox link type for slide 14" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_14" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_14" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_14" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_14" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 14 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_14" type="text" size="100" default="" label="Slide 14 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_14" type="list" default="0" label="Open slide 14 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 15 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_15" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 15 image from 'upload_slides' folder" description="Select slide 15 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_15" type="text" size="100" default="" label="Slide 15 title" description="Slide 15 title. If left empty it will not be displayed" />
+		<param name="slide_description_15" type="text" size="100" default="" label="Slide 15 Description" description="Slide 15 description. If left empty it will not be displayed" />
+		<param name="slide_intro_15" type="textarea" cols="80" rows="5" default="" label="Slide 15 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 15&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_15" type="list"  default="0" label="Activate Mbox for slide 15" description="Activate Mbox for slide 15." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_15" type="text" size="100" default="" label="Mbox link for slide 15" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_15" type="list" default="0" label="Mbox link type for slide 15" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_15" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_15" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_15" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_15" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 15 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_15" type="text" size="100" default="" label="Slide 15 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_15" type="list" default="0" label="Open slide 15 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 16 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_16" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 16 image from 'upload_slides' folder" description="Select slide 16 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_16" type="text" size="100" default="" label="Slide 16 title" description="Slide 16 title. If left empty it will not be displayed" />
+		<param name="slide_description_16" type="text" size="100" default="" label="Slide 16 Description" description="Slide 16 description. If left empty it will not be displayed" />
+		<param name="slide_intro_16" type="textarea" cols="80" rows="5" default="" label="Slide 16 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 16&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_16" type="list"  default="0" label="Activate Mbox for slide 16" description="Activate Mbox for slide 16." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_16" type="text" size="100" default="" label="Mbox link for slide 16" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_16" type="list" default="0" label="Mbox link type for slide 16" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_16" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_16" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_16" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_16" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 16 options&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="slide_link_16" type="text" size="100" default="" label="Slide 16 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_16" type="list" default="0" label="Open slide 16 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 17 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_17" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 17 image from 'upload_slides' folder" description="Select slide 17 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_17" type="text" size="100" default="" label="Slide 17 title" description="Slide 17 title. If left empty it will not be displayed" />
+		<param name="slide_description_17" type="text" size="100" default="" label="Slide 17 Description" description="Slide 17 description. If left empty it will not be displayed" />
+		<param name="slide_intro_17" type="textarea" cols="80" rows="5" default="" label="Slide 17 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 17&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_17" type="list"  default="0" label="Activate Mbox for slide 17" description="Activate Mbox for slide 17." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_17" type="text" size="100" default="" label="Mbox link for slide 17" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_17" type="list" default="0" label="Mbox link type for slide 17" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_17" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_17" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_17" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_17" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 17 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_17" type="text" size="100" default="" label="Slide 17 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_17" type="list" default="0" label="Open slide 17 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 18 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_18" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 18 image from 'upload_slides' folder" description="Select slide 18 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_18" type="text" size="100" default="" label="Slide 18 title" description="Slide 18 title. If left empty it will not be displayed" />
+		<param name="slide_description_18" type="text" size="100" default="" label="Slide 18 Description" description="Slide 18 description. If left empty it will not be displayed" />
+		<param name="slide_intro_18" type="textarea" cols="80" rows="5" default="" label="Slide 18 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 18&lt;/strong&gt;&lt;font&gt;"  />
+		<param name="mbox_18" type="list"  default="0" label="Activate Mbox for slide 18" description="Activate Mbox for slide 18." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_18" type="text" size="100" default="" label="Mbox link for slide 18" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_18" type="list" default="0" label="Mbox link type for slide 18" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_18" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_18" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_18" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_18" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 18 options&lt;/strong&gt;&lt;font&gt;"   />
+		<param name="slide_link_18" type="text" size="100" default="" label="Slide 18 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_18" type="list" default="0" label="Open slide 18 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 19 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_19" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 19 image from 'upload_slides' folder" description="Select slide 19 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_19" type="text" size="100" default="" label="Slide 19 title" description="Slide 19 title. If left empty it will not be displayed" />
+		<param name="slide_description_19" type="text" size="100" default="" label="Slide 19 Description" description="Slide 19 description. If left empty it will not be displayed" />
+		<param name="slide_intro_19" type="textarea" cols="80" rows="5" default="" label="Slide 19 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 19&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_19" type="list"  default="0" label="Activate Mbox for slide 19" description="Activate Mbox for slide 19." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_19" type="text" size="100" default="" label="Mbox link for slide 19" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_19" type="list" default="0" label="Mbox link type for slide 19" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_19" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_19" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_19" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_19" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 19 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_19" type="text" size="100" default="" label="Slide 19 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_19" type="list" default="0" label="Open slide 19 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		<param type="spacer" default="&lt;font color=red&gt;&lt;strong&gt;SLIDE 20 OPTIONS&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_image_20" type="imagelist"  directory="/images/upload_slides"  hide_default="0" default="" label="Select slide 20 image from 'upload_slides' folder" description="Select slide 20 image  from 'upload_slides'.If left empty it will not be displayed" />
+		<param name="slide_title_20" type="text" size="100" default="" label="Slide 20 title" description="Slide 20 title. If left empty it will not be displayed" />
+		<param name="slide_description_20" type="text" size="100" default="" label="Slide 20 Description" description="Slide 20 description. If left empty it will not be displayed" />
+		<param name="slide_intro_20" type="textarea" cols="80" rows="5" default="" label="Slide 20 into text" description="If using html , use only br and a  tag. If left empty it will not be displayed" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Video Link Options for slide 20&lt;/strong&gt;&lt;font&gt;" />
+		<param name="mbox_20" type="list"  default="0" label="Activate Mbox for slide 20" description="Activate Mbox for slide 20." >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="mboxlink_20" type="text" size="100" default="" label="Mbox link for slide 20" description="MUST BE VIDEO OR IMAGE LINK!" />
+		<param name="mboxtype_20" type="list" default="0" label="Mbox link type for slide 20" description="Video or image link ?" >
+			<option value="0">Image</option>
+			<option value="1">Video</option>
+		</param>
+		<param name="video_width_20" type="text"  default="640" label="Mbox video width" description="Define video width. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param name="video_height_20" type="text"  default="360" label="Mbox video height" description="Define video height. USE ONLY IF MBOX LINK TYPE IS VIDEO" />
+		<param type="spacer" default="&lt;font color=green&gt;&lt;strong&gt;Mbox Image Links Options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="image_group_20" type="list" default="0" label="If image , activate image group?" description="If this param is set to yes, you can group any of your images links in a mbox image gallery" >
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="image_group_name_20" type="text"  default="yjgallery" label="Image group name" description="NOTE: This group name must be set same for all images that you would like to show in same gallery group" />
+		<param type="spacer" default="&lt;font color=blue&gt;&lt;strong&gt;Normal link  for slide 20 options&lt;/strong&gt;&lt;font&gt;" />
+		<param name="slide_link_20" type="text" size="100" default="" label="Slide 20 link" description="If left empty it will not be displayed. MAKE SURE MBOX IS DISABELED FOR THIS SLIDE IF YOU ARE USING NORMAL LINK" />
+		<param name="slide_open_20" type="list" default="0" label="Open slide 20 link in" description="Open link in new window or same page">
+			<option value="0">in new window</option>
+			<option value="1">in same page</option>
+		</param>
+		
+	</params>
+</install>

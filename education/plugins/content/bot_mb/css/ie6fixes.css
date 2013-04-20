@@ -1,0 +1,14 @@
+.pngdiv img {filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);}
+#closeb img {filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(...);}
+#openstripspc {position:absolute;min-width:0;}
+#openstripspc p {position:relative;z-index:100;}
+#logospc {filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src='images/logo.png',sizingMethod='scale');z-index:1200;}
+
+#closeb,#close,#next,#prev{ 
+	behavior: url(iepngfix.htc); 
+}
+
+
+.bot_caption{
+bottom:7px;
+}

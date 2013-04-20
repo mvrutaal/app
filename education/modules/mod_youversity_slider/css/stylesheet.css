@@ -1,0 +1,88 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Copyright (C) 2006-2010 Youjoomla LLC. All Rights Reserved.        ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- THIS IS NOT FREE SOFTWARE ---------------- #      ||
+|| # http://www.youjoomla.com | http://www.youjoomla.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+/* main container*/
+#yv_container{
+	display:block;
+	position:relative;
+	margin:0px auto;
+	background:#fff;
+	padding:0;
+}
+/* slides contaner*/
+#yv_slider {
+	display:block;
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	margin:0 auto;
+}
+/* sliding items*/
+#yv_slider .yv_slideitems {
+	display:block;
+	position:relative;
+	padding:15px 0;
+	margin:0;
+	float:left;
+}
+/* sliding content holder*/
+#yv_slider .yv_slideitems_in{
+	background: url(../images/slide_sep.gif) repeat-y right top;
+	margin:0 -8px 0 0;
+	padding:0 50px;
+	overflow:hidden;
+}
+/* image holder */
+#yv_slider .yv_slideitems_in div.imageholder {
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	display:block;
+}
+/* title */
+#yv_slider .yv_slideitems_in .title{
+	display:block;
+	clear:both;
+	overflow:hidden;
+	font-size:130%;
+	margin:5px 0;
+}
+/* intro text*/
+#yv_slider .yv_slideitems_in .intro{
+	display:block;
+	clear:both;
+	overflow:hidden;
+}
+/* read more*/
+#yv_slider .yv_slideitems_in a.readmore{
+	float:right;
+}
+/* navigation */
+#yv_container .linkForward,
+#yv_container .linkBackward {
+	display:block;
+	position:absolute;
+	right:20px;
+	top:48%;
+	width:13px;
+	height:12px;
+	background-image:url(../images/right.gif);
+	background-position: center top;
+	background-repeat:no-repeat;
+	cursor:pointer;
+}
+#yv_container .linkBackward{
+	left:20px;
+	right:auto;
+	background-image:url(../images/left.gif);
+}
+
+#yv_container .linkForward:hover, 
+#yv_container .linkBackward:hover{
+	background-position:center bottom;
+}

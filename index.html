@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Sorry, We're Under Construction, but don't fret. We'll be back soon.</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$('#email').focus(function() {
+	if($(this).val() == 'Enter your email address') {
+	  $(this).val('');
+	}
+	});
+	
+	$('#email').blur(function() {
+	  if($(this).val() == '') {
+	    $(this).val('Enter your email address');
+	  }
+	});
+	
+});
+</script>
+</head>
+
+<body>
+<div id="header"><!-- Start Header -->
+
+  <div id="companyDetails">
+	
+		<div id="companyName">
+		  
+		  <h1><img src="img/logo.png" width="250" height="87" alt="feffik" /></h1>
+		  
+		</div>
+		
+		<div id="headerDivider"></div>
+	</div>
+	
+</div><!-- End Header -->
+
+<div id="outerBorder"><!-- Outer Content Border -->
+  
+	<div id="innerBorder"><!-- Inner Content Border -->
+	
+		 
+		 
+	  <div id="pieIE7Fix"><!-- Start Pie Graph -->
+		 
+			 <div id="pieWrapper"><div id="mainContent"><!-- Start Main Content -->
+			<img src="img/logo.png" width="250" height="87" alt="feffik" />		 
+		    <p><p>Kaya Horacio Sprock 4</span></p> 
+			<p>Tel. : +5999 736-3900 | Fax. : +5999 736 3777 <p>  Email : info@feffik.an</p>
+		 
+		 </div><!-- End Main Content --></div>
+		 
+		 </div><!-- End Pie Graph -->
+		 
+		 <div class="clearer"></div>
+		
+	  <div id="subscribeForm"><!-- Start Email Sign-up -->
+		  <!--<form method="post" action="contactEmail.php">
+		    <div><input type="text" value="Enter your email address" id="email"></input></div>
+		    <div><input type="submit" value="Subscribe" id="submit" class="btn"></input></div>
+		  </form> -->
+		</div><!-- End Email Sign-up -->
+		
+		<div id="socialWrapper"><!-- Start Social Media -->
+		  
+		  <a href="http://www.facebook.com/public/Sentro-Di-Formashon-Feffik" title="Facebook"><img src="img/facebook_32.png" alt="company Facebook account" class="iconPadding"/></a>
+		  <!-- <a href="#" title="Twitter"><img src="img/twitter_32.png" alt="company Twitter account" class="iconPadding"/></a>
+		  <a href="#" title="Linkedin"><img src="img/linkedin_32.png" alt="CEO Linkedin account" class="iconPadding"/></a>
+		  <a href="#" title="Flickr"><img src="img/flickr_32.png" alt="company Flickr account" class="endPiece"/></a> -->
+		  
+		</div><!-- End Social Media -->
+		
+		<div class="clearer"></div>
+	
+	</div><!-- End Inner Content Border -->
+	
+</div><!-- End Outer Content Border -->
+
+<div id="shadow"></div>
+<table width="200" border="0" align="center">
+  <tr>
+    <td><img src="img/happystudents.jpg" alt="" width="663" height="350" /></td>
+  </tr>
+</table>
+<div id="shadow"></div>
+<p>&nbsp;</p>
+<!-- Drop Shadow -->
+
+</body>
+</html>

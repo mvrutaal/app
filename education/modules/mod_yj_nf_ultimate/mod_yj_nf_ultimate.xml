@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" group="content" method="upgrade">
+<name>Yj Newsflash Ultimate</name>
+<author>YouJoomla.com</author>
+<creationDate>11-08-2010</creationDate>
+<license>commercial</license>
+<authorEmail>youjoomla@gmail.com</authorEmail>
+<authorUrl>www.youjoomla.com</authorUrl>
+<version>1.0</version>
+	<description>PLEASE GO TO YOUJOOMLA NEWSFLASH ULTIMATE MODULE FOR DESCRIPTION</description>
+		<languages>
+		<language tag="en-GB">en-GB.mod_yj_nf_ultimate.ini</language>
+	</languages>
+
+	<files>
+		<filename module="mod_yj_nf_ultimate">mod_yj_nf_ultimate.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+		<folder>elements</folder>
+		<folder>lib</folder>
+		<folder>css</folder>
+		<folder>images</folder>
+	</files>
+	
+	
+	
+	
+	
+	
+	 <params addpath="/modules/mod_yj_nf_ultimate/elements/">
+	 <param type="yjspacer" default="&lt;strong&gt;MODULE LAYOUT SETTINGS&lt;/strong&gt;" />
+<param name="module_template" type="folderlist" default="Default" hide_none="blank" label="Select default module template" directory="modules/mod_yj_nf_ultimate/tmpl" description="You can create custom module  templates for YJ Newsflash Ultimate Simply copy modules/mod_yj_nf_ultimate/tmpl/Default folder , rename it to your own template name and edit default.php within your template folder to your liking. Once you have created your module template , your template name will be visible here. You can also copy your template folder to your template/html/mod_yj_nf_ultimate/ folder and create custom overides for each module instance. To get you started we have created blank module template name New" />
+
+	<param type="yjspacer" default="&lt;strong&gt;NEWS SOURCE SETTINGS&lt;/strong&gt;" />	
+		
+		
+
+		
+		
+		<param name="get_items" type="mos_category" default="1" label="News items categorie" description="In this categorie there must be min 1 news item published" />
+		    <param name="item" type="yjgetitem" default="" label="Select specific items" description="Choose specific news items you would like to display" />
+    <param name="getspecific" type="yjlistitems" default="" label="Specific items list and order" description="First select few items from setting above. Drag and drop to re-order items. Click the remove icon to remove an item from the list. Note that the items reorder works only if you set News items ordering to Specific items order!" />
+	
+		
+		<param name="ordering" type="list" default="1" label="News Items Ordering" description="Choose news items order sequence. Note that Specific items order is the display order of your Specific items order setting above ">
+			<option value="1">Joomla news item ordering</option>
+			<option value="2">Most popular</option>
+			<option value="3">Random  news item</option>
+			<option value="4">Date created oldest article first</option>
+			<option value="5">Date created newest article first</option>
+			<option value="6">Specific items order</option>
+		</param> 
+		<param type="yjspacer" default="&lt;strong&gt;NEWS ITEM SETTINGS&lt;/strong&gt;" />
+				<param name="nitems" type="text" default="4" label="Number of news items to display" description="Number of news items to display" />
+		<param name="chars" type="text" default="40" label="Number of characters to display" description="Number of characters to display" />
+		<param name="allow_tags" type="text" default="" size="60" label="Alowable html tags" description="ALLOWTAGSTEXT" />
+		
+		<param name="showtitle" type="list" default="1" label="Show news item title" description="Show news item title" >
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="showintro" type="list" default="1" label="Show news item intro text" description="Show news item intro text" >
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>		   
+  
+		<param name="showimage" type="list" default="1" label="Show intro image" description="Show intro image" >
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		<param name="imgalign" type="list" default="1" label="Inro image position" description="Number of characters to display" >
+			<option value="1">Left</option>
+			<option value="2">Right</option>
+			<option value="3">Top</option>
+		</param>
+		<param name="imgwidth" type="text" default="90px" label="Intro image width" description="Intro image width" />
+		<param name="imgheight" type="text" default="50px" label="Intro image height" description="Intro image height" />
+		
+		
+		<param name="showrm" type="list" default="1" label="Show read more link" description="Show read more link" >
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param> 
+		
+		
+		<param name="showdate" type="list" default="1" label="Show create date" description="Show create date" >
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>					   
+		<param name="show_cat_title" type="list" default="1" label="Show category title" description="Show category title" >
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		
+		<param name="showcomments" type="list" default="2" label="Show comments" description="Show comments count from JComments">
+			<option value="1">Yes</option>
+			<option value="2">No</option>
+		</param>
+		
+		<param type="yjspacer" default="&lt;strong&gt;SPECIFIC MODULE CLASS&lt;/strong&gt;" />
+		<param name="moduleclass_sfx" type="text" default="_yjnewsflash" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+		
+	</params>
+</install>

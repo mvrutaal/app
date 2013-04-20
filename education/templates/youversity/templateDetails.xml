@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template" method="upgrade">
+	<name>Youversity</name>
+	<creationDate>12-22-2010</creationDate>
+	<author>Youjoomla LLC</author>
+	<copyright>Youjoomla LLC</copyright>
+	<authorEmail>youjoomlallc@gmail.com</authorEmail>
+	<authorUrl>www.youjoomla.com</authorUrl>
+	<version>1.0</version>
+	<description>
+		<![CDATA[<div id="temp_desc"><h1 class="admin_t_name">YouVersity Joomla! Template</h1>
+			<img src="../templates/youversity/template_thumbnail.png" /><br /><br />
+			<h1 class="admin_t_name">is proudly powered by</h1>
+			<a href="http://www.yjsimplegrid.com" class="modal" rel="{handler: 'iframe', size: {x: 800, y: 700}}">
+			<span title="YJSimpleGrid Joomla! Template Framework by Youjoomla.com">
+			<img src="../templates/youversity/images/admin/yjsgadmin_logo.png" border="0" title="" alt=""/>
+			</span>
+			</a>
+			
+			<div id="temp_det">      
+			<h3> Template Version 1.0 Initial Release</h3>
+			<h3>YJSG Version 1.0.11 Stable</h3>
+			<p>YouVersity Joomla  Template by Youjoomla.com. This is Commercial Template by Youjoomla.com. Visit <a href="http://www.youjoomla.com">Youjoomla 			Temlplates Club</a> home page.
+			</p>
+			<h3>Some of the YJSimpleGrid Template Framework Features are:</h3>
+			<ul>
+			<li>Advanced Joomla Template Manager Admin Panel</li>
+			<li>Flexible Layouts</li>
+			<li>Over 52 collapsible module positions easily add more</li>
+			<li>Automatic module width adjustment in template manager</li>
+			<li>Native RTL</li>
+			<li>Native Mobile devices support</li>
+			<li>Custom iPhone/iPad/iPod and handheld devices template</li>
+			<li>Cross browser support</li>
+			<li>Native Cufon and Google Font plus 15 CSS font styles</li>
+			<li>Native Jquery Support</li>
+			<li>Google Analytics website tracking built in</li>
+			<li>Native Joomla Mootols 1.2.4 System Upgrade support </li>
+			<li>Native rounded and square module styles 1 click switch</li>
+			<li>1 image PNG transparent rounded corners approach for easy editing</li>
+			<li>Component off switch or menu item assignment</li>
+			<li>Topmenu off switch or menu item assignment</li>
+			<li>7 default module grids with 5 modules each. Easily add more</li>
+			<li>Flexible logo and header size changer</li>
+			<li>Upgraded server side compression</li>
+			<li>Frontpage news items number of  characters control</li>
+			<li>Visible RTL switch and Font resizer</li>
+			<li>5 menu styles</li>
+			<li>Show page title under menu link</li>
+			<li>Custom error and offline pages</li>
+			<li>Custom user pages ( com_user )</li>
+			<li>Slide to top smothscroll</li>
+			<li>XHTML , CSS and JS valid</li>
+			</ul>
+			<h3>For additional documentation please visit <a href="http://www.yjsimplegrid.com" target="_blank">YJSimpleGrid</a></h3>
+			</div>
+			</div>]]>
+	</description>
+		<languages>
+		<language tag="en-GB">en-GB.tpl_youversity.ini</language>
+	</languages>
+	<administration>
+		<languages>
+			<language tag="en-GB">admin/en-GB.tpl_youversity.ini</language>
+		</languages>
+	</administration>
+	<files>
+	<filename>index.php</filename>
+	<filename>component.php</filename>
+	<filename>error.php</filename>
+	<filename>favicon.ico</filename>
+	<filename>offline.php</filename>
+	<filename>params.ini</filename>
+	<filename>template_thumbnail.png</filename>
+	<folder>css</folder>
+	<folder>images</folder>
+	<folder>html</folder>
+	<folder>elements</folder>
+	<folder>layouts</folder>
+	<folder>src</folder>
+	<folder>yjsgcore</folder>
+	</files>
+	<positions>
+		<position>top</position>
+		<position>header</position>
+		<position>footer</position>
+		<position>insettop</position>
+		<position>insetbottom</position>
+		<position>inset</position>
+		<position>bottom</position>
+		<position>banner</position>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>topmenu</position>
+		<position>topmenu1</position>
+		<position>topmenu2</position>
+		<position>topmenu3</position>
+		<position>topmenu4</position>
+		<position>topmenu5</position>
+		<position>topmenu6</position>
+		<position>topmenu7</position>
+		<position>topmenu8</position>
+		<position>topmenu9</position>
+		<position>topmenu10</position>
+		<position>mobiletop</position>
+		<position>mobilebottom</position>
+		<position>mobilesearch</position>
+		<position>mobilelogin</position>
+		<position>cpanel</position>
+		<position>top1</position>
+		<position>top2</position>
+		<position>top3</position>
+		<position>top4</position>
+		<position>top5</position>
+		<position>top_search</position>
+		<position>adv1</position>
+		<position>adv2</position>
+		<position>adv3</position>
+		<position>adv4</position>
+		<position>adv5</position>
+		<position>bodytop1</position>
+		<position>bodytop2</position>
+		<position>bodytop3</position>
+		<position>bodybottom1</position>
+		<position>bodybottom2</position>
+		<position>bodybottom3</position>
+		<position>right</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+		<position>user8</position>
+		<position>user9</position>
+		<position>user10</position>
+		<position>user11</position>
+		<position>user12</position>
+		<position>user13</position>
+		<position>user14</position>
+		<position>user15</position>
+		<position>user16</position>
+		<position>user17</position>
+		<position>user18</position>
+		<position>user19</position>
+		<position>user20</position>
+		<position>user21</position>
+		<position>user22</position>
+		<position>user23</position>
+		<position>user24</position>
+		<position>user25</position>
+	</positions>
+<params addpath="/templates/youversity/elements">
+		<param name="yjsgtog" type="yjaccordion" default="" description=" " label=" " yjsgtogle="STYLE_SETTINGS" yjsgdetial="STYLE_SETTINGS_TAB" />
+		<param name="" type="yjsgtextblank" default="CUSTOM_CSS_SLABEL"/>
+		<param name="custom_css" type="yjsglist" default="2" label="CUSTOM_CSS_LABEL" description="CUSTOM_CSS_DESC">
+		<option value="1">Yes</option>
+		<option value="2">No</option>
+		</param>
+		<param name="" type="yjsgtextblank" default="STTEXT_LABEL"/>
+		<param name="" type="yjsgparamtitle" default="STYLE_SUB" />
+		<param name="default_color" type="yjsglist" default="turquoise" label="COLOR_LABEL" description="COLOR_DESC">
+		<option value="turquoise">Turquoise</option>
+		<option value="red">Red</option>
+		<option value="orange">Orange</option>
+		<option value="blue">Blue</option>
+		</param>
+		<param name="default_font" type="yjsglist" default="3" label="FONT_SIZE_LABEL" description="FONT_SIZE_DESC">
+		<option value="1">Extra Small</option>
+		<option value="2">Small</option>
+		<option value="3">Medium</option>
+		<option value="4">Large</option>
+		<option value="5">Extra Large</option>
+		</param>
+		<param name="default_font_family" type="yjsglist" default="12" label="FONT_FAM_LABEL" description="FONT_FAM_DESC">
+		<option value="1">Bookman Old Style</option>
+		<option value="2">Palatino</option>
+		<option value="3">Times New Roman</option>
+		<option value="4">Century Gothic</option>
+		<option value="5">Lucida Grande</option>
+		<option value="6">Arial Helvetica</option>
+		<option value="7">Tahoma</option>
+		<option value="8">Verdana</option>
+		<option value="9">Coperplate Gothic</option>
+		<option value="10">Lucida Console</option>
+		<option value="11">Gill Sans MT</option>
+		<option value="12">Trebuchet MS</option>
+		<option value="13">Courier New</option>
+		<option value="14">Cambria</option>
+		<option value="15">Georgia</option>
+		</param>
+		<param name="selectors_override" type="yjsglist" default="2" label="HTAG_OVR_LABEL" description="HTAG_OVR_DESC">
+		<option value="1" enable="paramsselectors_override_type|paramscss_font_family|paramsgoogle_font_family|paramscufon_font_family|paramsaffected_selectors">Yes</option>
+		<option value="2" disable="paramsselectors_override_type|paramscss_font_family|paramsgoogle_font_family|paramscufon_font_family|paramsaffected_selectors">No</option>
+		</param>
+		<param name="selectors_override_type" type="yjsglist" default="1" label="HTAG_OVR_TYPE_LABEL" description="HTAG_OVR_TYPE_DESC">
+		<option value="1" enable="paramscss_font_family|" disable="paramsgoogle_font_family|paramscufon_font_family">CSS</option>
+		<option value="2" enable="paramsgoogle_font_family" disable="paramscss_font_family|paramscufon_font_family">Google Font</option>
+		<option value="3" enable="paramscufon_font_family" disable="paramsgoogle_font_family|paramscss_font_family">Cufon Font</option>
+		</param>
+		<param name="css_font_family" type="yjsglist" default="12" label="CSS_FONT_FAM_LABEL" description="CSS_FONT_FAM_DESC">
+		<option value="1">Bookman Old Style</option>
+		<option value="2">Palatino</option>
+		<option value="3">Times New Roman</option>
+		<option value="4">Century Gothic</option>
+		<option value="5">Lucida Grande</option>
+		<option value="6">Arial Helvetica</option>
+		<option value="7">Tahoma</option>
+		<option value="8">Verdana</option>
+		<option value="9">Coperplate Gothic</option>
+		<option value="10">Lucida Console</option>
+		<option value="11">Gill Sans MT</option>
+		<option value="12">Trebuchet MS</option>
+		<option value="13">Courier New</option>
+		<option value="14">Cambria</option>
+		<option value="15">Georgia</option>
+		</param>
+		<param name="google_font_family" type="yjsglist" default="2" label="G_FONT_FAM_LABEL" description="G_FONT_FAM_DESC">
+		<option value="1">Cardo</option>
+		<option value="2">Cantarell</option>
+		<option value="3">Lobster</option>
+		<option value="4">Nobile</option>
+		<option value="5">Droid Sans</option>
+		<option value="6">Old+Standard+TT</option>
+		<option value="7">Tangerine</option>
+		<option value="8">Vollkorn</option>
+		<option value="9">Yanone</option>
+		<option value="10">Molengo</option>
+		<option value="11">Crimson Text</option>
+		</param>
+		<param name="cufon_font_family" type="yjsglist" default="1" label="CU_FONT_FAM_LABEL" description="CU_FONT_FAM_DESC">
+		<option value="1">Museo</option>
+`		<option value="2">Andika</option>
+		<option value="3">CABND</option>
+		<option value="4">Junction</option>
+		<option value="5">League Gothic</option>
+		<option value="6">Tallys</option>
+		<option value="7">Chunk</option>
+		<option value="8">Fertigo</option>
+		<option value="9">Delicious</option>
+		<option value="10">Molengo</option>
+		</param>
+		<param name="affected_selectors" type="textarea" rows="8" cols="50" default="div.title h1,div.title h2,div.componentheading, h1,h2,h3,h4,h5,h6,.yjround h4,.yjsquare h4" label="AFF_SELECTORS_LABEL" description="AFF_SELECTORS_DESC"/>
+		<param name="yjsgtog" type="yjaccordion" yjsgtogle="LOGO_LABEL" yjsgdetial="LOGO_SUB" />
+		<param name="" type="yjsgtextblank" default="LGTEXT_LABEL"/>
+		<param name="" type="yjsgparamtitle" default="LOGO_YJ_TITLE" />
+		<param name="logo_height" type="yjsgtext" default="110px" label="LOGO_HEIGHT" description="LOGO_HEIGHT_DESC" />
+		<param name="logo_width" type="yjsgtext" default="244px" label="LOGO_WIDTH" description="LOGO_WIDTH_DESC" />
+		<param name="turn_logo_off" type="yjsglist" default="2" label="LOGO_OFF_LABEL" description="LOGO_OFF_DESC">
+		<option value="1">Yes</option>
+		<option value="2">No</option>
+		</param>
+		<param name="turn_header_block_off" type="yjsglist" default="2" label="HEADER_BLOCK_OFF" description="HEADER_BLOCK_OFF_DESC">
+		<option value="1">Yes</option>
+		<option value="2">No</option>
+		</param>
+		<param name="yjsgtog" type="yjaccordion" yjsgtogle="TOP_MENU_LABEL" yjsgdetial="TOP_MENU_SUB"/>
+		<param name="" type="yjsgtextblank" default="TMTEXT_LABEL"/>
+		<param name="" type="yjsgparamtitle" default="TOP_MENU_YJ_LABEL" />
+		<param name="menuName" type="mos_menu" default="mainmenu" label="DEF_TOP_MENU_LABEL" description="DEF_TOP_MENU_DESC" />
+		<param name="default_menu_style" type="yjsglist" default="2" label="DEF_MENU_STYLE_LABEL" description="DEF_MENU_STYLE_DESC">
+		<option value="1">Dropdown Menu</option>
+		<option value="2">SMooth Dropdown->YJMM Plugin</option>
+		<option value="5">Split Menu</option>
+		</param>
+		
+		
+		<param name="sub_width" type="yjsgtext" default="280px" label="SUBW_LABEL" description="SUBW_DESC" />
+		<param name="yjsg_menu_offset" type="yjsgtext" default="95" label="OFFSET_LABEL" description="OFFSET_DESC" />
+		<param name="" type="yjsgparamtitle" default="TOP_MENU_OFF_YJ_LABEL" />
+		
+			
+		
+		
+		<param name="turn_topmenu_off" type="yjsgmenuitems" default="0" label="TOP_MENU_DISA_LABEL" description="TOP_MENU_DISA_DESC"  />
+		<param name="yjsgtog" type="yjaccordion" yjsgtogle="DEF_GRID_LABEL" yjsgdetial="DEF_GRID_SUB"/>
+		<param name="" type="yjsgtextblank" default="DGTEXT_LABEL"/>
+		<param name="" type="yjsgparamtitle" default="MAINB_YJ_LABEL" />
+		<param name="css_widthdefined" type="yjsglist" default="px" label="SITE_WIDTH_DEF_IN_LABEL" description="SITE_WIDTH_DEF_IN_DESC" >
+		<option value="%">Percentage</option>
+		<option value="px">Pixels</option>
+		</param>
+		<param name="css_width" type="yjsgtext" default="1000" label="DEF_SITE_WIDTH_LABEL" description="DEF_SITE_WIDTH_DESC" />
+		<param name="site_layout" type="yjsglist" default="2" label="DEF_LAYOUT_LABEL" description="DEF_LAYOUT_DESC">
+		<option value="1">Leftblock-Midblock-Rightblock</option>
+		<option value="2">Midblock-Leftblock-Rightblock</option>
+		<option value="3">Leftblock-Rightblock-Midblock</option>
+		</param>
+		<param name="" type="yjsgparamtitle" default="MBC_W_LABEL"  />
+		<param name="widthdefined" type="yjsglist" default="%" label="MBC_W_D_I_LABEL" description="MBC_W_D_I_DESC" >
+		<option value="%">Percentage</option>
+		<option value="px">Pixels</option>
+		</param>
+		<param name="maincolumn" type="yjsgtext" default="55" label="MBC_LABEL" description="MBC_DESC" />
+		<param name="insetcolumn" type="yjsgtext" default="0" label="IC_LABEL" description="IC_DESC" />
+		<param name="leftcolumn" type="yjsgtext" default="22.5" label="LC_LABEL" description="LC_DESC" />
+		<param name="rightcolumn" type="yjsgtext" default="22.5" label="RC_LABEL" description="RC_DESC" />
+		<param name="" type="yjsgparamtitle" default="SPII_LABEL" />
+		<param name="define_itemid" type="yjsgmenuitems" default="0" label="SPII_SELECT_LABEL" description="SPII_SELECT_DESC"/>
+		<param name="widthdefined_itmid" type="yjsglist" default="%" label="SPII_WIDTH_DEF_LABEL" description="SPII_WIDTH_DEF_DESC" >
+		<option value="%">Percentage</option>
+		<option value="px">Pixels</option>
+		</param>
+		<param name="maincolumn_itmid" type="yjsgtext" default="50" label="SPII_MBC_LABEL" description="SPII_MBC_DESC" />
+		<param name="insetcolumn_itmid" type="yjsgtext" default="0" label="SPII_IC_LABEL" description="SPII_IC_DESC" />
+		<param name="leftcolumn_itmid" type="yjsgtext" default="22.5" label="SPII_LC_LABEL" description="SPII_RC_LABEL" />
+		<param name="rightcolumn_itmid" type="yjsgtext" default="22.5" label="SPII_RC_LABEL" description="SPII_RC_DESC" />
+		<param name="yjsgtog" type="yjaccordion" yjsgtogle="MG_LABEL" yjsgdetial="MG_SUB" />
+		<param name="" type="yjsgtextblank" default="MGTEXT_LABEL"/>
+		<param name="yjsg_1_width" type="yjsgmultitext" default="20|20|20|20|20" labels="Top1|Top2|Top3|Top4|Top5" items="5" size="2" class="serialize_multiple" label="G1_LABEL"  description="G1_DESC" />
+		<param name="" type="yjsgtextblank"  default="HEAD_DIS_TXT"/>
+		<param name="yjsg_2_width" type="yjsgmultitext" default="20|20|20|20|20" labels="Adv1|Adv2|Adv3|Adv4|Adv5" items="5" size="2" class="serialize_multiple" label="G2_LABEL" description="G2_DESC"/>
+		<param name="yjsg_3_width" type="yjsgmultitext" default="20|20|20|20|20" labels="User1|User2|User3|User4|User5" items="5" size="2" class="serialize_multiple" label="G3_LABEL" description="G3_DESC"/>
+		<param name="yjsg_4_width" type="yjsgmultitext" default="20|20|20|20|20" labels="User6|User7|User8|User9|User10" items="5" size="2" class="serialize_multiple" label="G4_LABEL" description="G4_DESC" />
+		<param name="yjsg_bodytop_width" type="yjsgmultitext" default="33|33|33" labels="Bodytop1|Bodytop2|Bodytop3" items="3" size="2" class="serialize_multiple" label="GMBT_LABEL" description="GMBT_DESC" />
+		<param name="yjsg_yjsgbodytbottom_width" type="yjsgmultitext" default="33|33|33" labels="Bodybottom1|Bodybottom2|Bodybottom3" items="3" size="2" class="serialize_multiple" label="GMBB_LABEL" description="GMBB_DESC" />
+		<param name="yjsg_5_width" type="yjsgmultitext" default="20|20|20|20|20" labels="User11|User12|User13|User14|User15" items="5" size="2" class="serialize_multiple" label="G5_LABEL"  description="G5_DESC"/>
+		<param name="yjsg_6_width" type="yjsgmultitext" default="20|20|20|20|20" labels="User16|User17|User18|User19|User20" items="5" size="2" class="serialize_multiple" label="G6_LABEL" description="G6_DESC" />
+		<param name="yjsg_7_width" type="yjsgmultitext" default="20|20|20|20|20" labels="User21|User22|User23|User24|User25" items="5" size="2" class="serialize_multiple" label="G7_LABEL" description="G7_DESC" />
+		<param name="yjsgtog" type="yjaccordion" yjsgtogle="MOBILE_YJ_LABEL" yjsgdetial="MOBILE_SUB"/>
+		<param name="" type="yjsgtextblank" default="MOBILE_TXT_LABEL"/>
+		<param name="iphone_default" type="yjsglist" default="1" label="IPHONE_LABEL" description="IPHONE_DESC">
+		<option value="1">iPhone</option>
+		<option value="2">Handheld</option>
+		</param>
+		<param name="android_default" type="yjsglist" default="1" label="ANDROID_LABEL" description="ANDROID_DESC">
+		<option value="1">iPhone</option>
+		<option value="2">Handheld</option>
+		</param>
+		<param name="handheld_default" type="yjsglist" default="2" label="HANDHELD_LABEL" description="HANDHELD_DESC">
+		<option value="1">iPhone</option>
+		<option value="2">Handheld</option>
+		</param>
+		<param name="mobile_reg" type="yjsglist" default="1" label="MOBREG_LABEL" description="MOBREG_DESC">
+		<option value="1">Yes</option>
+		<option value="2">No</option>
+		</param>
+		<param name="yjsgtog" type="yjaccordion" yjsgtogle="ADD_F_LABEL" yjsgdetial="ADD_F_SUB"/>
+		<param name="" type="yjsgtextblank" default="ADTEXT_LABEL"/>
+		<param name="" type="yjsgparamtitle" default="GA_YJ_LABEL" />
+		<param name="" type="yjsgtextblank" default="GATEXT_LABEL"/>
+		<param name="ga_switch" type="radio" default="0" label="GA_LABEL" description="GA_DESC">
+		<option value="1">Enable</option>
+		<option value="0">Disable</option>
+		</param>
+		<param name="GAcode" type="yjsgtext" default="UA-xxxxxx-x" size="20" label="GACODE_LABEL" description="GACODE_DESC" />
+		<param name="" type="yjsgparamtitle" default="NOT_YJ_LABEL" />
+		<param name="compress" type="radio" default="0" label="COMPRESS_LABEL" description="COMPRESS_DESC">
+		<option value="1">Enable</option>
+		<option value="0">Disable</option>
+		</param>
+		<param name="ie6notice" type="radio" default="0" label="IE_LABEL" description="IE_DESC">
+		<option value="1">Enable</option>
+		<option value="0">Disable</option>
+		</param>
+		<param name="nonscript" type="radio" default="0" label="NOSC_LABEL" description="NOSC_DESC">
+		<option value="1">Enable</option>
+		<option value="0">Disable</option>
+		</param>
+		<param name="remove_tp" type="radio" default="0" label="TP1_LABEL" description="TP1_DESC">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="" type="yjsgparamtitle" default="ST_YJ_LABEL" />
+		<param name="show_tools" type="yjsglist" default="1" label="ST_LABEL" description="ST_DESC">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="show_fres" type="yjsglist" default="1" label="FR_LABEL" description="FR_DESC">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="show_rtlc" type="yjsglist" default="1" label="RTLC_LABEL" description="RTLC_DESC">
+		<option value="1">Yes</option>
+		<option value="0">No</option>
+		</param>
+		<param name="" type="yjsgparamtitle" default="TDIR_YJ_LABEL" />
+		<param name="text_direction" type="yjsglist" default="2" label="TDIR_LABEL" description="TDIR_DESC">
+		<option value="1">RTL</option>
+		<option value="2">LTR</option>
+		</param>
+		<param name="" type="yjsgparamtitle" default="SEO_YJ_LABEL" />
+		<param name="turn_seo_off" type="yjsglist" default="2" label="SEO_LABEL" description="SEO_DESC">
+		<option value="1" enable="paramsseo|paramstags">Yes</option>
+		<option value="2" disable="paramsseo|paramstags">No</option>
+		</param>
+		<param name="seo" type="yjsgtext" default="Your description goes here" label="SSEOD_LABEL" size="50" description="SSEOD_DESC" />
+		<param name="tags" type="yjsgtext" default="Your keywords go here" size="50" label="SSEOK_LABEL" description="SSEOK_DESC" />
+		<param name="" type="yjsgparamtitle" default="COPY_YJ_LABEL" />
+		<param name="branding_off" type="yjsglist" default="2" label="COPY_LABEL" description="COPY_DESC">
+		<option value="1">No</option>
+		<option value="2">Yes</option>
+		</param>
+		<param name="joomlacredit_off" type="yjsglist" default="2" label="JCOPY_LABEL" description="JCOPY_DESC">
+		<option value="1">No</option>
+		<option value="2">Yes</option>
+		</param>
+		<param name="yjsgtog" type="yjaccordion" yjsgtogle="ADV_LABEL" yjsgdetial="ADV_SUB"/>
+		<param name="" type="yjsgtextblank" default="ADVTEXT_LABEL"/>
+		<param name="" type="yjsgparamtitle" default="FPC_YJ_LABEL"/>
+		<param name="fp_controll_switch" type="yjsglist" default=""  label="FPC_LABEL" description="FPC_DESC" >
+		<option value="1">Yes</option>
+		<option value="2">No</option>
+		</param>
+		<param name="fp_chars_limit" type="yjsgtext" default="3000" size="10" label="CHAR_LABEL" description="CHAR_DESC" />
+		<param name="fp_after_text" type="yjsgtext" default="" size="10" label="ICHAR_LABEL" description="ICHAR_DESC" />
+		<param name="" type="yjsgparamtitle" default="SCRIPT_YJ_LABEL" />
+		<param name="" type="yjsgtextblank" default="JQ_LABEL"/>
+		<param name="jq_switch" type="yjsglist" default="2" label="JQ_SWITCH_LABEL"  description="JQ_SWITCH_DESC">
+		<option value="1">Enable</option>
+		<option value="2">Disable</option>
+		</param>
+		<param name="" type="yjsgparamtitle" default="SMS_YJ_LABEL" />
+		<param name="" type="yjsgtextblank" default="MSTEXT_LABEL"/>
+		<param name="YJsg1_module_style" type="yjsgradio" default="YJsgxhtml" label="G1MS_LABEL"  description="G1MS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsgh_module_style" type="yjsgradio" default="YJsgxhtml" label="GHMS_LABEL"  description="GHMS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsg2_module_style" type="yjsgradio" default="YJsgxhtml" label="G2MS_LABEL"  description="G2MS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsg3_module_style" type="yjsgradio" default="YJsgxhtml" label="G3MS_LABEL"  description="G3MS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsg4_module_style" type="yjsgradio" default="YJsgxhtml" label="G4MS_LABEL"  description="G4MS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsgmt_module_style" type="yjsgradio" default="YJsgxhtml" label="GMBTMS_LABEL"  description="GMBTMS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsgl_module_style" type="yjsgradio" default="YJsgxhtml" label="LBMS_LABEL"  description="LBMS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsgr_module_style" type="yjsgradio" default="YJsgxhtml" label="RBMS_LABEL"  description="RBMS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsgi_module_style" type="yjsgradio" default="YJsgxhtml" label="IMS_LABEL"  description="IMS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsgit_module_style" type="yjsgradio" default="YJsgxhtml" label="ITMS_LABEL"  description="ITMS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsgib_module_style" type="yjsgradio" default="YJsgxhtml" label="IBMS_LABEL"  description="IBMS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsgmb_module_style" type="yjsgradio" default="YJsgxhtml" label="MBBMS_LABEL"  description="MBBMS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsg5_module_style" type="yjsgradio" default="YJsgxhtml" label="G5MS_LABEL"  description="G5MS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsg6_module_style" type="yjsgradio" default="YJsgxhtml" label="G6MS_LABEL"  description="G6MS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="YJsg7_module_style" type="yjsgradio" default="YJsgxhtml" label="G7MS_LABEL"  description="G7MS_DESC">
+		<option value="YJsgxhtml">Square</option>
+		<option value="YJsground">Round</option>
+		<option value="YJsgplain">Blank</option>
+		</param>
+		<param name="" type="yjsgparamtitle" default="CP_LABEL" />
+		<param name="component_switch" type="yjsgmenuitems" default="0" label="CPD_LABEL" description="CPD_DESC" />
+		<param name="admin_css_time" type="yjsgtime" default="0" />
+	</params>
+</install>

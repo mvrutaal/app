@@ -1,0 +1,64 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+@media screen {
+
+body {
+	direction: rtl;
+	margin:0;
+}
+
+p, div, li, ul, h1, h2, h3, h4, h5, h6, div.title h1, .componentheading, span, th, td, tr, input, .contentpane {
+	text-align:right;
+}
+
+#mobilemenu li {
+	display:inline;
+	padding:0 15px 0 15px;
+}
+
+.changemobile {
+	float:left;
+}
+
+.readon {
+	float:right;
+}
+
+ul li {
+	padding-right:15px;
+}
+
+#logo a {
+	line-height:900px;
+}
+
+.yjsglogo {
+	left:0px;
+	right:auto;
+}
+
+.validators {
+	float:right;
+	text-align:right;
+}
+
+#footmod ul.menu-nav {
+	text-align:right;
+}
+
+#footmod ul li {
+	padding:0 0 0 15px;
+	text-align:right;
+}
+}

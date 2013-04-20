@@ -1,0 +1,91 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*TOP MENU*/
+#topmenu_holder{
+	text-align:right;
+}
+.horiz_rtl ul.subul_main.group_holder{position:fixed;}
+.horiz_rtl li ul {
+	top:-999em!important;
+	left:auto;
+	right:-999em;
+	*right:-10em;
+	_right:0em;
+	display:none!important;
+}
+.horiznav li:hover ul ul, 
+.horiznav li:hover ul ul ul,
+.horiznav li:hover ul ul ul ul, 
+.horiznav li:hover ul ul ul ul ul, 
+.horiznav li:hover ul ul ul ul ul ul,
+.horiznav li:hover ul ul ul ul ul ul ul,
+.horiznav li:hover ul ul ul ul ul ul ul ul,
+.horiznav li.sfHover ul ul,
+.horiznav li.sfHover ul ul ul, 
+.horiznav li.sfHover ul ul ul ul,
+.horiznav li.sfHover ul ul ul ul ul,
+.horiznav li.sfHover ul ul ul ul ul ul,
+.horiznav li.sfHover ul ul ul ul ul ul ul,
+.horiznav li.sfHover ul ul ul ul ul ul ul ul,
+.horiznav li.sfHoverHas ul ul,
+.horiznav li.sfHoverHas ul ul ul, 
+.horiznav li.sfHoverHas ul ul ul ul,
+.horiznav li.sfHoverHas ul ul ul ul ul,
+.horiznav li.sfHoverHas ul ul ul ul ul ul,
+.horiznav li.sfHoverHas ul ul ul ul ul ul ul,
+.horiznav li.sfHoverHas ul ul ul ul ul ul ul ul{
+	top:-999em!important;
+	left:auto;
+	right:-999em;
+	*right:-10em;
+	_right:0em;
+	display:none!important;
+	
+}
+.horiznav li:hover ul ul{
+	display:block!important;
+}
+.horiznav li:hover ul, 
+.horiznav li li:hover ul, 
+.horiznav li li li:hover ul, 
+.horiznav li li li li:hover ul,
+.horiznav li li li li li:hover ul,
+.horiznav li li li li li li:hover ul,
+.horiznav li li li li li li li:hover ul,
+.horiznav li li li li li li li li:hover ul,
+.horiznav li.sfHover ul, 
+.horiznav li li.sfHover ul, 
+.horiznav li li li.sfHover ul,
+.horiznav li li li li.sfHover ul,
+.horiznav li li li li li.sfHover ul,
+.horiznav li li li li li li.sfHover ul,
+.horiznav li li li li li li li.sfHover ul,
+.horiznav li li li li li li li li.sfHover ul,
+.horiznav li.sfHoverHas ul, 
+.horiznav li li.sfHoverHas ul, 
+.horiznav li li li.sfHoverHas ul,
+.horiznav li li li li.sfHoverHas ul,
+.horiznav li li li li li.sfHoverHas ul,
+.horiznav li li li li li li.sfHoverHas ul,
+.horiznav li li li li li li li.sfHoverHas ul,
+.horiznav li li li li li li li li.sfHoverHas ul{
+	z-index:100;
+	top:auto!important;
+	right:auto;
+	display:block!important;
+}
+/* IE7 */
+.horiznav li:hover ul{*left:auto!Important;*margin:47px 0 0 0;}
+.horiznav li li:hover ul{*margin-top:0px!Important}
+.horiznav a {*float:left;*width:auto;}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<state>
+		<name>YJ Mega Menu</name>
+		<description>YJ Mega Menu Parameters</description>
+		<params addPath="/plugins/system/YJMegaMenu/element">
+			<param name="yj_menu_sub_title" type="textarea" rows="3" cols="40" default="" label="Sub title" description="Add your menu item description here.You can also include HTML" />
+			<param name="yj_menu_custom_class" type="text" default="" label="Add custom css class" description="You can add custom css class to your new item elelment and syle it differently if needed.To affect the new elelment class add div.horiznav a.your_class_name OR div.horiznav div.your_class_name for modules, in custom.css  or CURRENT_COLOR.css at the bottom of the file. Using !important property would make sure that the class is affected. Example: background:blue!important;" />
+			<param name="yj_group_holder" type="radio" default="0" label="Act as group holder?" description="If selected yes , this will be the main group holder. Please assign this as a parent to all groups  you want to be visible inside this menu item. Note that this can only be a Normal link , not module and not module position">
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+			</param>
+			<param name="yj_menu_holder_width" type="text" default="" label="Group holder width" description="Column width" />
+			<param name="yj_menu_groups_count" type="list" default="0" label="Number of sub groups" description="Number of sub groups" >
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+			</param>
+			<param name="yj_sub_group_width" type="textarea" rows="3" cols="40" default="" label="Sub groups width" description="Sub groups width assigns width to Group holder sub groups.Example if you have 3 sub groups enter each group width.1 per line. " />
+			<param name="yj_item_type" type="yjmenutype" default="0" label="Menu item type" description="You can select what type of the item this would be . Module, module position, Normal link. If this item is a group holder please leave default value.Normal link" />
+			<param name="yj_menu_show_title" type="list" default="1" label="Display link title, image and sub title if  link type is module?" description="If set to NO  Link title , link image and link description will not be displayed.This option is functional ONLY if link type is module or module position. This is usefull if you like to show only module with its tile. For example Login Form" >
+				<option value="1">Yes</option>
+				<option value="2">No</option>
+			</param>
+			<param name="yj_mod_id" id="yj_mod_id" type="yjsqlmultilistx" multiple="multiple" default="-1" size="10" description="Use Ctrl-click to select more than one item." label="Select one or more module" sql="SELECT id, module, title FROM #__modules WHERE  `client_id`=0 AND module != 'mod_mainmenu' ORDER BY position ASC" key_field="id" value_field="title" />
+			<param name="yj_position" id="yj_position" type="yjsqlmultilistx" multiple="multiple" default="-1" size="10" description="Use Ctrl-click to select more than one item." label="Select one or more position" sql="SELECT DISTINCT position FROM #__modules ORDER BY position ASC" key_field="position" value_field="position" />
+		</params>
+	</state>
+</metadata>

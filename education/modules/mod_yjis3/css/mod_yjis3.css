@@ -1,0 +1,118 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Copyright ©2006-2009 Youjoomla LLC. All Rights Reserved.           ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- THIS IS NOT FREE SOFTWARE ---------------- #      ||
+|| # http://www.youjoomla.com | http://www.youjoomla.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+#YJSlide_outer,
+#YJSlide_outer_1,
+#YJSlide_outer_2,
+#YJSlide_outer_3,
+#YJSlide_outer_4,
+#YJSlide_outer_5{
+display:block;
+position:relative;
+clear:both;
+overflow:hidden;
+background-color:#000000;
+margin:0 auto;
+}
+#YJSlide_inner,
+#YJSlide_inner_1,
+#YJSlide_inner_2,
+#YJSlide_inner_3,
+#YJSlide_inner_4,
+#YJSlide_inner_5{
+display:block;
+position:relative;
+}
+.YJSlide_slide{
+display:block;
+position:relative;
+overflow:hidden;
+}
+.YJSlide_slide .YJSlide_description{
+display:block;
+position:absolute;
+top:40px;
+right:40px;
+color:#eee;
+font-size:12px;
+background:url(../img/desc_bg.png);
+width:250px;
+padding:15px;
+border:1px solid #404040;
+text-align:center;
+}
+.YJSlide_slide .YJSlide_intro{
+display:block;
+position:absolute;
+width:100%;
+left:0px;
+bottom:0px;
+height:80px;
+text-align:justify;
+background:url(../img/intro_bg.png);
+color:#18181A;
+font-weight:bold;
+}
+.YJSlide_slide .YJSlide_intro p{
+display:block;
+height:40px;
+margin:20px;
+overflow:hidden;
+}
+#YJS_left, #YJS_right,
+#YJS_left_1, #YJS_right_1,
+#YJS_left_2, #YJS_right_2,
+#YJS_left_3, #YJS_right_3,
+#YJS_left_4, #YJS_right_4,
+#YJS_left_5, #YJS_right_5{
+display:block;
+position:absolute;
+top:32%;
+left:0px;
+background:url(../img/navs_l.png) left center;
+width:24px;
+height:48px;
+z-index:200;
+}
+#YJS_right,#YJS_right_1,
+#YJS_right_2,#YJS_right_3,
+#YJS_right_4,#YJS_right_5{
+right:0px;
+left:auto;
+background:url(../img/navs_r.png) right center;
+}
+
+.navContainer{
+display:block;
+position:relative;
+clear:both;
+text-align:left;
+margin:0 auto;
+}
+.navContainer #YJS_nav_info,
+.navContainer #YJS_nav_info_1,
+.navContainer #YJS_nav_info_2,
+.navContainer #YJS_nav_info_3,
+.navContainer #YJS_nav_info_4,
+.navContainer #YJS_nav_info_5{
+background:#000;
+color:#FFFFFF;
+padding:2px 5px 2px; 
+margin-right:10px;
+}
+
+
+.YJS_tips-tip{
+background:url(../img/bubble2.png);
+width:180px;
+text-align:left;
+padding:10px;
+font-size:11px;
+color:#FFFFFF;
+z-index:300;
+}

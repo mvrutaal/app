@@ -1,0 +1,132 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+@media screen {
+
+body {
+	direction: rtl;
+}
+
+p, div, li, ul, h1, h2, h3, h4, h5, h6, div.title h1, .componentheading, span, th, td, tr, input, .contentpane {
+	text-align:right;
+}
+
+/* general toggler styles */
+.YJ_mtoggler, .YJ_mtoggler_hover {
+	padding:0 0 0 10px;
+	right:5px;
+	left:auto;
+	text-align:center;
+}
+
+.YJ_mtoggler span, .YJ_mtoggler span:hover {
+	padding:0 10px 0 0px;
+}
+
+.YJ_mparams {
+}
+
+/* login toggler*/
+#moblogin div.YJ_mtoggler {
+	right:75px;
+	left:auto;
+}
+
+/* register toggler*/
+#mobreg div.YJ_mtoggler {
+	right:145px;
+	left:auto;
+}
+
+/* search toggler style*/
+#mobsearch div.YJ_mtoggler {
+	right:230px;
+	left:auto;
+}
+
+/*mobile login*/
+
+.yjreg label {
+	float:right;
+}
+
+.yjreg input {
+	float:left;
+}
+
+.yjreg_ins {
+	float:right;
+}
+
+/* mobile search*/
+.YJ_mparams div.search {
+	background-position:right center;
+	background-image:url(../../images/mobile/msearchbg_rtl.gif);
+}
+
+.YJ_mparams div.search .inputbox, .YJ_mparams div.search .inputbox:hover {
+	padding:3px 35px 0 0;
+}
+
+.YJ_mparams form {
+	margin:0;
+	padding:0;
+}
+
+/* mobile switch*/
+.changemobile {
+	left:10px;
+	right:auto;
+}
+
+/* mobile top scroll*/
+.mscroll {
+	left:70px;
+	right:auto;
+}
+
+.readon {
+	float:right;
+}
+
+ul li {
+	padding-right:15px;
+}
+
+#logo a {
+	line-height:900px;
+}
+
+.yjsglogo {
+	left:0px;
+	right:auto;
+}
+
+.validators {
+	float:right;
+	text-align:right;
+}
+
+#footmod ul.menu-nav {
+	text-align:right;
+}
+
+#footmod ul li {
+	padding:0 0 0 15px;
+	text-align:right;
+}
+#mobmenu,#mobsearch,#moblogin,#mobreg{
+	float:right;
+	margin:0;
+}
+}

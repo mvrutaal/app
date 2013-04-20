@@ -1,0 +1,227 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/* news items  frontpage category section and article
+--------------------- */
+/* HOLDING CLASS OF VIEWS. WHEN YOU ADD PAGE SUFFIX IT WILL AFFECT THIS DIV.
+   STYLE HOLDING CLASSES ACCORDING TO THIS DIV */
+div.yjsg-newsitems{
+}
+/* MAIN NEWS ITEMS HOLDERS FOR FRONTPAGE, CATEGORY AND SECTION. CHILD OF div.yjsg-newsitems*/
+div.yjsg-newsitems .yjsg-blog_f,
+div.yjsg-newsitems .yjsg-blog_c,
+div.yjsg-newsitems .yjsg-blog_s{
+	padding:0 5px;
+	}
+
+/* FRONTPAGE NEWS ITEM HOLDER */
+.news_item_f {
+	margin:0 3px;
+	position:relative;
+}
+/* CATEGORY NEWS ITEM HOLDER */
+.news_item_c {
+	margin:0 0px;
+	position:relative;
+}
+/* SECTION NEWS ITEM HOLDER */
+.news_item_s {
+	margin:0 5px;
+	position:relative;
+}
+/* ARTICLE VIEW NEWS ITEM HOLDER */
+.news_item_a {
+	margin:0px 0px 0 0px!Important;
+	padding:0px 5px;
+	overflow:hidden;
+	position:relative;
+}
+/* THIS DIV HOLDS THE NEWS ITEMS TITLES. h1 in article view and h2 in frontpage, category and section view*/
+div.title {
+	overflow:hidden;
+	display:block;
+	position:relative;
+}
+
+div.title h1, div.title h2, h1.pagetitle, .componentheading {
+	font-size:150%;
+}
+
+div.title h1, div.title h2 {
+	text-align:left;
+	padding:0;
+	margin:5px 0 4px 0;
+	line-height:1.5em;
+}
+/* THIS DIV HOLDS NEWS ITEM TEXT ONLY */
+.newsitem_text {
+	display:block;
+	padding:0px 3px 0px 3px;
+}
+
+/* newsitem_tools  CONTAINS , CREATED BY , CREATE DATE , PRINT,EMAIL , PDF BUTTONS */
+.newsitem_tools {
+	display: block;
+	width:100%;
+	margin:0 0 0 0 !Important;
+	clear:both;
+	overflow:hidden;
+	padding:3px 0;
+	margin:0 0 10px 0;
+}
+
+/* newsitem_info  CONTAINS , CREATED BY , CREATE DATE */
+.newsitem_info {
+	width: 70%;
+	display: block;
+	float:left;
+	overflow:hidden;
+}
+
+/* buttonheading  CONTAINS PRINT,EMAIL , PDF BUTTONS */
+.buttonheading {
+	width:30%;
+	display:block;
+	overflow:hidden;
+	padding:0;
+	float:right;
+}
+
+.buttonheading img {
+	border:0;
+}
+
+.buttonheading .email, .buttonheading .print, .buttonheading .pdf {
+	float:right;
+	margin:0px 2px 0 0;
+	width:16px;
+}
+
+.createby {
+	padding:0 3px 0 0px;
+}
+
+.createdate {
+	padding:0 3px 0 0px;
+}
+/* SECTION NAME HOLDER*/
+.newsitem_section {
+	padding:0 3px 0 0px;
+}
+
+.newsitem_section a {
+	padding:0 3px 0 0px;
+}
+/* CATEGORY NAME HOLDER*/
+.newsitem_category {
+	padding:0 3px 0 0px;
+}
+
+.newsitem_category a {
+	padding:0 3px 0 0px;
+}
+
+.newsitems_link {
+}
+
+/* end*/
+.modifydate {
+	width: 100%;
+	display: block;
+	padding:10px 0;
+	overflow:hidden;
+}
+/* PRINT VIEW */
+.components {
+	padding:20px 0;
+}
+/* MAIN FLOATS */
+div.yjsg-newsitems .float-left {
+	float: left;
+	overflow: hidden;
+}
+
+div.yjsg-newsitems .float-right {
+	float: right;
+	overflow: hidden;
+}
+
+div.yjsg-newsitems .width20 {
+	width: 20%;
+}
+
+div.yjsg-newsitems .width25 {
+	width: 25%;
+}
+
+div.yjsg-newsitems .width33 {
+	width: 33.333%;
+}
+
+div.yjsg-newsitems .width50 {
+	width: 50%;
+}
+
+div.yjsg-newsitems .width100 {
+	width: 100%;
+}
+
+
+div.yjsg-newsitems .yjsg-leadingarticles {
+	overflow: hidden;
+}
+
+.yjsg-morearticles {
+	margin: 10px 0px 10px 0px;
+	clear:both;
+	display:block;
+}
+
+div.yjsg-pagination {
+	text-align: center;
+	clear:both;
+}
+/* CATEGORY NEWS ITEMS LIST HOLDER*/
+.categorylist {
+	padding:0 5px;
+}
+/* CATEGORY AND SECTION DESCRIPTION HOLDER DIV */
+.description {
+	font-size:140%;
+}
+
+span.article_separator {
+	display: block;
+	height: 7px;
+	clear: both;
+}
+
+div.yjsg-newsitems div.yjsg-pagination p.yjsg-results {
+}
+
+/* MILTI ITEMS ROW SPACING */
+div.yjsg-newsitems div.multicolumns div.news_item_f, div.yjsg-newsitems div.multicolumns div.news_item_c, div.yjsg-newsitems div.multicolumns div.news_item_s {
+	margin: 0px 5px 5px 5px;/* multi row newsitem spacing*/
+}
+/* FIRST ITEM IN A ROW SPACING */
+div.yjsg-newsitems div.multicolumns div.first div.news_item_f, div.yjsg-newsitems div.multicolumns div.first div.news_item_c, div.yjsg-newsitems div.multicolumns div.first div.news_item_s {
+	margin-left: 0px;
+}
+/* LAST ITEM IN A ROW SPACING */
+div.yjsg-newsitems div.multicolumns div.last div.news_item_f, div.yjsg-newsitems div.multicolumns div.last div.news_item_c, div.yjsg-newsitems div.multicolumns div.last div.news_item_s {
+	margin-right: 0px;
+}
+
+div.yjsg-newsitems div.yjsg-morearticles {
+	margin: 10px 0px 10px 0px;
+}

@@ -1,0 +1,760 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimplegrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # orangeistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*BODY ID'S USED FOR CSS FONT STYLES AND BASE SITE BODY STYLING */
+body#stylef1, body#stylef2, body#stylef3, body#stylef4, body#stylef5, body#stylef6, body#stylef7, body#stylef8, body#stylef9, body#stylef10, body#stylef11, body#stylef12, body#stylef13, body#stylef14, body#stylef15, body#stylef16 {
+	background:#eeeeee;
+	color:#888888;
+}
+/* BOTTOM PART OF THE SITE LAYOUT. BASE WRAP */
+#centerbottom {
+}
+/*GRIDS STYLING CAN BE USED TO STYLE EACH orange DIFFERENTLY */
+#yjsg1 {
+	color:#121212;
+}
+
+#header {
+}
+#header_holder {
+	background:url(../images/header_holder.jpg) repeat-x left bottom;
+}
+
+#logo {
+	background:url(../images/orange/logo.png) no-repeat 0px 0px;
+}
+
+#yjsgheadergrid {
+	color:#efefef;
+}
+
+#yjsg2 {}
+
+#yjsg3 {}
+
+#yjsg4 {}
+
+#yjsg5 {}
+
+#pathway {
+	color:#000606;
+}
+#pathway .yjsg_breadcrumbs a.pathway{
+	background: url(../images/arrow.png) no-repeat right center;
+}
+#yjsg6 {
+	color:#efefef;
+}
+
+#yjsg7 {
+	color:#efefef;
+}
+
+#footer {
+	color:#888888;
+}
+
+#joomlacorangeit {
+	background:#1F1F1F;
+	color:#474646;
+}
+
+/*TEMPLATE CSS 
+--------------------- */
+/* SITE LINKS */
+a:link, a:visited{
+	text-decoration: none;
+	color:#888888;
+}
+/* SITE HOVERS */
+a:focus, a:hover {
+	color:#fe8300;
+	text-decoration: none;
+}
+/*DIFFERENT STYLE FOR  LINKS ON DARK BG
+--------------------- */
+#footmod .yjplain a, #footmod .yjplain a:visited, #cp a, #cp a:visited, #joomlacorangeit a, #joomlacorangeit a:visited, #pathway a, #pathway a:visited, #yjsg1 a, #yjsg1 a:visited, #yjsg7 a, #yjsg7 a:visited{
+	color:#888888;
+}
+#footmod .yjplain a:hover, #footmod .yjplain a:focus, #cp a:focus, #cp a:hover, #joomlacorangeit a:focus, #joomlacorangeit a:hover, #pathway a:focus, #pathway a:hover, #yjsg1 a:focus, #yjsg1 a:hover, #yjsg7 a:focus, #yjsg7 a:hover{
+	color:#fe8300;
+}
+/* SITE HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+	color:#000606;
+}
+
+.small, .createdate, .modifydate, .createby {
+	text-transform: uppercase;
+	color:#000606;
+	font-size:10px;
+}
+/* SITE TITLE, NEWS ITEM TITLE, MORE ARTICLES */
+.pagetitle, div.title h1, div.title h2, .yjsg-morearticles h3 {
+	color:#222222;
+}
+
+.yjsg-morearticles h3 {
+	border:none;
+}
+/* NEWS ITEM TITLE WITH LINK*/
+div.title h1 a:link, div.title h1 a:visited, div.title h2 a:link, div.title h2 a:visited {
+	color:#000606;
+}
+
+div.title h1 a:hover, div.title h1 a:focus, div.title h2 a:hover, div.title h2 a:focus {
+	color:#fe8300;
+}
+
+/* FORM ELEMENTS */
+/* ARTICLE TABLE OF CONTENTS */
+fieldset, .toclink {
+	border:1px solid #c8c8c8;
+}
+/* FIELDSET IN MODULES */
+.yjsquare_in fieldset, .yjround_in fieldset {
+	border:none;
+}
+/* INPUTBOXES */
+.inputbox, #userreminder .requiorange {
+	background: #FFFFFF;
+	border: 1px solid #cccccc;
+}
+
+.inputbox:hover, .inputbox:focus, #userreminder .requiorange:hover, #userreminder .requiorange:focus {}
+
+/*BUTTONS
+--------------------- */
+.button {
+	color:#fff;
+}
+
+.button, .validate {
+ background:url(../images/blue/topmenu/menu_color.gif) repeat-y left top;
+ border:1px solid #000;
+ color:#fe8300;
+}
+
+a.button:link, a.button:visited, a.button:focus {
+	color:#fff;
+	padding:3px;
+}
+
+.back_button a:hover, .back_button a:active {
+	color: #000;
+	text-decoration: none;
+}
+
+a.pagenav, .pagenav_prev a, .pagenav_next a, .pagenavbar a, .back_button a {
+	color:#fe8300;
+}
+
+a.readon:link, a.readon:visited {
+	color:#fe8300;
+}
+
+/* ADDITIONAL SPAN READON CLASS FOR ROUND CORNERS */
+.readon span {}
+
+a.readon:hover, .pagenavbar a:hover {
+	color:#000606;
+}
+
+/* THIS TEMPLATE IS EQUIPED WITH  ROUND AND SQUARE CORNERS
+TO SEE ROUND CORNERS SIMPLY CHANGE THE MODULE orange STYLE IN TEMPLATE MANAGER
+UNDER ACCORDION ADVANCED OPTIONS. SEE ALSO rounded.css FILE".
+
+/* ROUND MODULES STYLING
+--------------------- */
+/* ROUND IMAGE. YOU CAN CHANGE TO YOUR OWN. 1 IMAGE TECHNIQUE USED */
+.yjround .content, .yjround .t, .yjround .b, .yjround .b div {
+	background:url(../images/orange/rounded.png);
+	bac\kground:url(../images/orange/rounded_ie.gif);
+}
+
+.yjround h4 {
+	color:#222222;
+}
+/* TITLE SPANS FOR SECOND PART OF THE TITLE COLOR */
+.yjround h4 span {
+	color:#222222;
+}
+/* SPECIFIC TEXT AND TITLE COLOR FOR GRIDS WITH DARK BACGROUND*/
+#yjsg1 .yjround .content, #yjsgheadergrid .yjround .content, #yjsg7 .yjround .content {
+	color:#222222;
+}
+.yjround_in {
+}
+
+/*SQUARE MODULES STYLE
+--------------------- */
+#yjsg1 .yjsquare h4,#yjsg3 .yjsquare h4,#yjsg5 .yjsquare h4,#yjsg6 .yjsquare h4{
+	border:none;
+}
+.yjsquare h4 {
+	color:#000606;
+}
+/* SPAN COLOR SHOWS FIRST */
+.yjsquare h4 span {
+	color:#000606;
+}
+.yjsquare {}
+.yjsquare_in {}
+/* ADDITIONAL MODULE STYLES */
+/* _yj1 */
+.yjsquare_yj1 h4 {}
+.yjsquare_yj1 h4 span {}
+.yjsquare_yj1 {}
+.yjsquare_yj1 .yjsquare_in {}
+/* _yj2 */
+.yjsquare_yj2 h4 {}
+.yjsquare_yj2 h4 span {}
+.yjsquare_yj2 {}
+.yjsquare_yj2 .yjsquare_in {}
+/*  SPECIFIC TEXT AND TITLE COLOR FOR GRIDS WITH DARK BACGROUND */
+#yjsg6 .yjsquare h4, #yjsg7 .yjsquare h4, #yjsgheadergrid .yjsquare h4 {
+	color:#efefef;
+}
+#yjsg7 .yjsquare h4{
+}
+/* TITLE SPANS FOR SECOND PART OF THE TITLE COLOR*/
+#yjsg6 .yjsquare h4 span, #yjsg7 .yjsquare h4 span, #yjsgheadergrid .yjsquare h4 span {
+	color:#efefef;
+}
+
+/*SEARCH INPUTBOX STYLING. CURRENTLY USING DEFAULT INPUT STYLE
+--------------------- */
+.search {}
+.search .inputbox {}
+/*LOGIN MODULE INPUTBOX CURRENTLY USING DEFAULT INPUT STYLE
+--------------------- */
+#modlgn_passwd, #modlgn_username {}
+#modlgn_passwd {}
+#modlgn_username {}
+#mod_login_remember {
+	border: none;
+	padding: 0!important;
+}
+
+/*TOP MENU STYLE FOR SPLIT MENU, CSS DROPDOWN AND SMOOTH DROPDOWN
+--------------------- */
+.horiznav {
+	background: url(../images/orange/topmenu/horiz_bg.png) repeat-x 0 bottom;
+
+}
+/* MENU OVERRIDES */
+.YJSG_listContainer{
+	background:none;
+}
+/* NORMAL SUBTITLE */
+.horiznav ul li a span.yjm_desc {
+	color:#909090;
+}
+/*ACTIVE AND HOVER SUBTITLE*/
+.horiznav ul li.active a span.yjm_desc, 
+.horiznav ul li a:hover span.yjm_desc, 
+.horiznav ul li.sfHover a span.yjm_desc {
+	color:#fe8300;
+	text-shadow:none;
+}
+/* NORMAL TOP LINKS */
+.horiznav ul li {
+	background: url(../images/orange/topmenu/normal_l.png) no-repeat left center;
+}
+.horiznav ul li a,.horiznav ul li a:visited {
+	color: #909090;
+	background: url(../images/orange/topmenu/normal_r.png) no-repeat right center;
+}
+/* NORMAL TOP LINKS WITH CHILD ELEMENT */
+.horiznav ul li.haschild {
+	background: url(../images/orange/topmenu/normal_l_haschild.png) no-repeat left center;
+}
+/* TOP LINKS HOVER */
+.horiznav ul li:hover, .horiznav ul li.sfHover{
+	background: url(../images/orange/topmenu/hover_l.png) no-repeat left center;
+}
+.horiznav ul li a:hover, .horiznav ul li:hover a, .horiznav ul li.sfHover a,
+ .horiznav ul li.sfHoverHas a {
+	color: #fe8300;
+	background: url(../images/orange/topmenu/hover_r.png) no-repeat right center;
+}
+/* TOP LINKS HOVER WITH CHILD ELEMENT */
+.horiznav ul li.haschild:hover{
+	background: url(../images/orange/topmenu/hover_l_haschild.png) no-repeat left center;
+}
+.horiznav ul li.haschild a:hover{
+	color: #fe8300;
+}
+/* ACTIVE TOP LINKS  */
+.horiznav li#current,.horiznav li.active{
+	background: url(../images/orange/topmenu/active_l.png) no-repeat left center;
+}
+.horiznav li#current a , .horiznav li.active a,.horiznav li.active a:visited,.horiznav li.active.sfHover a:visited,
+.horiznav li.active.sfHoverHas a:visited{
+	color: #fe8300;
+	background: url(../images/orange/topmenu/active_r.png) no-repeat right center;
+}
+/* ACTIVE TOP LINKS WITH CHILD ELEMENT */
+.horiznav li#current.haschild, .horiznav li.haschild,.horiznav ul li.haschild.active,
+.horiznav ul li.sfHoverHas{
+	background: url(../images/orange/topmenu/active_l_haschild.png) no-repeat left center;
+}
+/* ACTIVE TOP LINKS HOVER */
+.horiznav li#current:hover, .horiznav li#current.sfHover,
+.horiznav li.active:hover, .horiznav li.active.sfHover {
+	background: url(../images/orange/topmenu/active_l.png) no-repeat left center;
+}
+.horiznav li#current a:hover,.horiznav li#current.sfHover a:hover,
+.horiznav li.active a:hover{
+	color: #ff9a2d;
+	background: url(../images/orange/topmenu/active_r.png) no-repeat right center;
+}
+/* ACTIVE TOP LINKS HOVER WITH CHILD ELEMENT */
+.horiznav li#current.haschild:hover,.horiznav li#current.haschild.sfHoverHas,.horiznav li#current.active.sfHover{
+	background: url(../images/orange/topmenu/active_l_haschild.png) no-repeat left center;
+}
+/* MAIN SUB UL AND MODULE BG */
+ul.subul_main.group_holder,
+.subul_main li.has_modpoz div.yj_menu_module_holder,
+.subul_main li.has_module div.yj_menu_module_holder,
+.subul_main li.haschild div.yj_menu_module_holder,
+.horiznav ul ul.subul_main.dropline{
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+}
+/* end drpline extra */
+.horiznav  ul ul.subul_main.dropline ul a,
+.horiznav  ul ul.subul_main.dropline ul a:hover,
+ul.subul_main.dropline div.yj_menu_module_holder{
+	border-bottom: 1px solid #121212!important;
+}
+/*--- end dropline extra ---*/
+
+/* MAIN SUB ITEM*/
+.top_menu ul.subul_main li a{
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+	border-bottom: 1px solid #121212;
+	color: #909090;
+}
+.top_menu ul.subul_main li a:visited{
+	color: #909090;
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+}
+/*MAIN SUB ITEM HOVER*/
+.top_menu ul.subul_main li a:hover {
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+	color: #fe8300;
+}
+.top_menu ul.subul_main li,
+.top_menu ul.subul_main li.active,
+.top_menu ul.subul_main li.active:visited,
+.top_menu ul.subul_main li.active:hover,
+.top_menu ul.subul_main li:hover,
+.top_menu ul.subul_main li:visited,
+.top_menu ul.subul_main li#current,
+.top_menu ul.subul_main li#current:hover{
+	border:none;
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+}
+/*MAIN SUB ACTIVE UL A ITEMS*/
+.top_menu li#current ul.subul_main li a,
+.top_menu li.active ul.subul_main li a{
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+	color: #909090;
+}
+/*MAIN SUB ACTIVE UL ITEMS A HOVER*/
+.top_menu li#current ul.subul_main li a:hover,
+.top_menu li.active ul.subul_main li a:hover,
+.top_menu li#current.sfHover ul.subul_main li a:hover,
+.top_menu li.active.sfHover ul.subul_main li a:hover {
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+	color: #fe8300;
+}
+/*MAIN SUB UL ACTIVE LI A ITEM*/
+.top_menu ul.subul_main li#current a{
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+	color: #fe8300;
+}
+/*MAIN SUB UL ACTIVE LI A ITEM HOVER*/
+.top_menu ul.subul_main li#current a:hover,
+.top_menu ul.subul_main li#current.sfHover{
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+	color: #fe8300;
+}
+
+/*SUB LEVEL PARENT ITEM ARROWS*/
+ul.subul_main li.haschild span.child a,
+ul.subul_main ul.subul_main li.haschild span.child a,
+ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a,
+ul.subul_main ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a{
+	background-image:url(../images/orange/topmenu/arrow_right.gif)!important;
+	background-repeat:no-repeat!important;
+	background-position:95% 50%!important;
+}
+ul.subul_main li.haschild span.child a:hover,
+ul.subul_main ul.subul_main li.haschild span.child a:hover,
+ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a:hover,
+ul.subul_main ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a:hover{
+	background-image:url(../images/orange/topmenu/arrow_down.gif)!important;
+	background-repeat:no-repeat!important;
+	background-position:95% 50%!important;
+}
+/* IE6 SPECIFIC */
+.horiznav li li.sfHover ul,
+.horiznav li li.sfHoverHas ul,
+.top_menu ul.subul_main.isie{
+background:#292929;
+}
+
+/********************** CORNERS FOR MENU UL'S ***************************/
+/*TOP LEFT*/
+.horiznav li.tl, .horiznav li.tl:hover{
+	background:transparent url(../images/orange/topmenu/corners/tl.png)!important;
+}
+/* TOP RIGHT*/
+.horiznav li.tr, .horiznav li.tr:hover {
+	background:transparent url(../images/orange/topmenu/corners/tr.png) no-repeat right top!important;
+}
+/* BOTTOM RIGHT*/
+.horiznav li.br, .horiznav li.br:hover{
+	background:transparent url(../images/orange/topmenu/corners/br.png) no-repeat right bottom!important;
+}
+/* BOTTOM LEFT*/
+.horiznav li.bl, .horiznav li.bl:hover {
+	background:transparent url(../images/orange/topmenu/corners/bl.png) no-repeat left bottom!important;
+}
+/* RIGHT MIDDLE */
+.horiznav li.right, .horiznav li.right:hover {
+	background:transparent url(../images/orange/topmenu/corners/right.png) no-repeat right bottom!important;
+}
+/*CUSTOM FIRST DROP NO TOP ROUNDED CORNERS EXAMPLE*/
+
+.horiznav ul.level1 li.tl,.horiznav ul.level1 li.tl:hover{
+	background:transparent url(../images/orange/topmenu/square/tl.png)!important;
+}
+.horiznav ul.level1 li.tr,.horiznav ul.level1 li.tr:hover{
+	background:transparent url(../images/orange/topmenu/square/tr.png) no-repeat right top!important;
+}
+.horiznav ul.level2 li.tl,.horiznav ul.level2 li.tl:hover{
+	background:transparent url(../images/orange/topmenu/corners/tl.png)!important;
+}
+.horiznav ul.level2 li.tr,.horiznav ul.level2 li.tr:hover{
+	background:transparent url(../images/orange/topmenu/corners/tr.png) no-repeat right top!important;
+}
+/********************** YJSG MEGA MENU STYLE ***************************/
+/* Group holder title*/
+.top_menu .horiznav .group_holder li.haschild a,
+.top_menu .horiznav .group_holder li.haschild .group_holder li.haschild a{
+	color: #909090;
+	border:none;
+	background:none;
+}
+.top_menu .horiznav .group_holder li.haschild a:hover,
+.top_menu .horiznav .group_holder li.haschild .group_holder li.haschild a:hover{
+	color: #fe8300;
+	background:none;
+}
+/* Group holder items title*/
+.top_menu .horiznav .group_holder li.haschild li a,
+.top_menu .horiznav .group_holder li.haschild .group_holder li.haschild li a{
+	color: #909090;
+	border-bottom: 1px solid #121212;
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+}
+.top_menu .horiznav .group_holder li.haschild li a:hover,
+.top_menu .horiznav .group_holder li.haschild .group_holder li.haschild li a:hover{
+	color: #fe8300;
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+	
+}
+span.separator{
+	background:url(../images/orange/topmenu/menu_color.gif) repeat-y left top;
+	border-bottom: 1px solid #121212;
+	color: #121212;
+}
+/*Menu module links*/
+div.yj_menu_module_holder .yjsquare_in a:link,
+div.yj_menu_module_holder .yjsquare_in a:visited{
+	color:#121212!important;
+}
+
+div.yj_menu_module_holder .yjsquare_in a:focus,
+div.yj_menu_module_holder .yjsquare_in a:hover{
+	color:#fe8300!important;
+}
+/*SIDE MENU MODULE
+--------------------- */
+/* MENU NORMAL LINKS COLOR */
+#mainlevel li a, .menu li a, a.mainlevel {
+	background: url(../images/orange/mainlevel.gif) no-repeat left top;/* LINKS BG IMAGE */
+	color:#727272;
+}
+/* HOVER AND ACTIVE LINKS BG IMAGE */
+#mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel:hover, a.mainlevel#active_menu, #mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, .menu li a:hover, .menu li.active a {
+	background: url(../images/orange/mainlevel.gif) no-repeat left bottom;
+}
+ /* SUB LEVELS LI IMAGE */
+a.sublevel {
+	background: url(../images/orange/bodyli.gif) no-repeat 5px 9px;
+}
+
+a.sublevel:hover {
+	text-decoration:underline;
+}
+/*HOVER AND ACTIVE LINK COLOR */
+#footmod a.mainlevel:hover, #footmod a.mainlevel:active, #footmod a.mainlevel:focus, #mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel#active_menu, a.sublevel, a.sublevel:hover, a.sublevel:active, a.sublevel:focus, #active_menu, a.mainlevel:hover, a.mainlevel:active, a.mainlevel:focus, li.active a, li.parent a {
+	color:#fe8300;
+}
+/* MENU LI A AND MENU SUB LEVELS LINK COLOR */
+li.active ul li a, a.sublevel#active_menu {
+	color:#fe8300; 
+}
+  /* MENU LI A HOVER AND ACTIVE LINK COLOR AND BG */
+li.active ul li a:hover, li.active ul li.active a {
+	color:#fe8300;
+	background: url(../images/orange/mainlevel.gif) no-repeat left top;
+}
+/* SITES LI IMAGE */
+ul li {
+	background: url(../images/orange/bodyli.gif) no-repeat 0px 5px;
+}
+
+/*USER PAGES STYLE */
+#userlogin, #userlogout, #userregister, #userreminder {
+	background:none;
+}
+/* IMAGE CAPTIONS */
+p.img_caption {
+	background:#efefef;
+	border:1px solid #ccc;
+	text-shadow:1px 1px #fff;
+	text-transform:uppercase;
+	color:#5F5F5F;
+}
+.bignumber {
+	color:#000606;
+}
+.dropcap {
+	color:#000606;
+}
+/*QUICK LINKS*/
+#quick_link{
+ background:url(../images/quicklink.gif) no-repeat left top;
+}
+#quicklinks{
+ background:url(../images/quicklinks_bg.gif) no-repeat left bottom;
+}
+#quicklinks_r{
+	background:url(../images/quicklinks_bg_r.gif) no-repeat right bottom;
+}
+/*SEARCH BOX*/
+.search .button{
+	background:url(../images/search_button.gif) no-repeat right top;
+}
+.search .inputbox{
+	background:url(../images/search_box.gif) no-repeat left top;
+}
+/*YJSG 1*/
+#yjsg1 .yjsgxhtml{
+	background:url(../images/top_separator.png) no-repeat right center;
+}
+/*CENTERBOTTOM LEFT AND RIGHT SHADOW*/
+#centerbottom{
+	background:url(../images/centerbottom.gif) no-repeat left top;
+}
+#centerbottom_r{
+	background:url(../images/centerbottom_r.gif) no-repeat right top;
+}
+/*ULTIMATE1 AND ULTIMATE2 TITLE LINK COLOR*/
+a.itemtitle:link,a.itemtitle:visited{
+	color:#fe8300;
+}
+a.itemtitle:hover,a.itemtitle:focus{
+	color:#000606;
+}
+/*NF-ULTIMATE 1*/
+/* NEWS ITEM IMAGE HOLDER */
+.yjsquare_yjnfu1 div.imageholder{
+	background:#eee;
+	border:1px solid #e6e6e6;
+}
+/*  NEWS ITEM INTRO TEXT*/
+.yjsquare_yjnfu1 p.itemintro {
+	text-shadow:1px 1px #fff;
+}
+/*  NEWS ITEM READ MORE*/
+.yjsquare_yjnfu1 .yjnewsflashu_in{
+	background:url(../images/nf_separator.png) no-repeat center bottom;
+}
+a.itemreadmore:link, a.itemreadmore:visited{
+	color:#fe8300;
+}
+a.itemreadmore:focus, a.itemreadmore:hover{
+	color:#000606;
+}
+/*NF-ULTIMATE2*/
+/* NEWS ITEM IMAGE HOLDER */
+.yjsquare_yjnfu2 div.imageholder{
+	background:#eee;
+	border:1px solid #e6e6e6;
+}
+/*  NEWS ITEM INTRO TEXT*/
+.yjsquare_yjnfu2 p.itemintro {
+	text-shadow:1px 1px #fff;
+}
+/*SIDE MENU USER3*/
+a.mainlevel_yjvmenu,.menu_yjvmenu a{
+ background:url(../images/sidemenu.png) no-repeat right top;
+}
+.menu_yjvmenu a:hover,.menu_yjvmenu li#current a,a.mainlevel_yjvmenu:hover,a#active_menu_yjvmenu{
+ background:url(../images/sidemenu.png) no-repeat right bottom;
+ color:#fe8300;
+}
+/*YJSG3 AND YJSG5 HOLDER*/
+.top_left, .top_right,
+.bottom_left, .bottom_right{
+	background:url(../images/top_left.gif) no-repeat left top;
+}
+.top_right{
+	background:url(../images/top_right.gif) no-repeat right top;
+}
+.bottom_left{
+	background:url(../images/bottom_left.gif) no-repeat left bottom;
+}
+.bottom_right{
+	background:url(../images/bottom_right.gif) no-repeat right bottom;
+}
+.roundins{
+	background:#fff;
+}
+/*YJSG5*/
+#yjsg5 .yjsgxhtml,#yjsg3 .yjsgxhtml {
+	background:url(../images/top_separator.png) no-repeat right center;
+}
+/*BOTTOM GRIDS YJSG6, YJSG7*/
+#big_gridholder{
+	background:url(../images/big_gridholder.gif) repeat-x left top;
+}
+/*FOOTER HOLDER*/
+#footer_holder{
+	background:url(../images/fotter_bg.png) repeat-x left top;
+}
+/*FOOTER NF-ULTIMATE 3*/
+/*NF TITLE*/
+.yjsquare_yjnfu3 h4{
+	color:#efefef;
+}
+/*NF SEPARATOR IMAGE*/
+.yjsquare_yjnfu3 .itemdetails{
+	background:url(../images/orange/date_separator.gif) repeat-y right top;
+}
+/*NF MONTH*/
+.yjsquare_yjnfu3 span.month{
+	color:#efefef;
+}
+/*NF DAY*/
+.yjsquare_yjnfu3 span.day{
+	color:#fe8300;
+}
+/*NF CAT TITLE*/
+.yjsquare_yjnfu3 a.itemtitle:link,.yjsquare_yjnfu3 a.itemtitle:visited{
+	color:#efefef;
+}
+.yjsquare_yjnfu3 a.itemtitle:focus,.yjsquare_yjnfu3 a.itemtitle:hover{
+	color:#fe8300;
+}
+/*NF INTROTEXT*/
+.yjsquare_yjnfu3 p.itemintro{
+	color:#888888;
+}
+/*END NF ULTIMATE3*/
+/*VERSITY SLIDER*/
+/*TITLE*/
+.yjsquare_youversity_slider h4,yjsquare_youversity_slider h4 span{
+	color:#efefef;
+}
+.yv_slideitems_in .title a:link,.yv_slideitems_in .title a:visited {
+	color:#fe8300;
+}
+.yv_slideitems_in .title a:hover,.yv_slideitems_in .title a:focus {
+	color:#000606;
+}
+/*MAIN CONTEINTER */
+.yjsquare_youversity_slider #versity_holder{
+	background:url(../images/versity_slider.gif) no-repeat left top
+}
+.yjsquare_youversity_slider #yv_container{
+	background:url(../images/versity_slider_r.gif) no-repeat right top;
+}
+/*IMAGE*/
+.yjsquare_youversity_slider div.imageholder{
+	border:3px solid #000;
+	background:#000;
+}
+/*READ MORE*/
+#yv_slider .yv_slideitems_in a.readmore:link, 
+#yv_slider .yv_slideitems_in a.readmore:visited{
+	color:#fe8300;
+}
+#yv_slider .yv_slideitems_in a.readmore:hover,
+#yv_slider .yv_slideitems_in a.readmore:focus{
+	color:#000606;
+}
+/*INTRO*/
+.yjsquare_youversity_slider .intro{
+	color:#efefef;
+}
+/*SLIDER SEPARATOR*/
+#yv_slider .yv_slideitems_in{
+	background:url(../images/orange/slide_sep.gif) repeat-y right top;
+}
+/*SLIDER NAVIGATION*/
+#yv_container .linkBackward{
+	background-image:url(../images/orange/left.gif);
+}
+#yv_container .linkForward{
+	background:url(../images/orange/right.gif);
+}
+/*END VERSITY SLIDER*/
+/*MODULE STYLES*/
+/*module style_yj1*/
+.yjsquare_yj1{
+	background:#fff;
+	border:3px solid #e4e4e4;
+}
+/*module style_yj3*/
+.yjsquare_yj3{
+	background:#262727;
+	border:2px solid #000;
+}
+.yjsquare_yj3 h4{
+	color:#efefef;
+}
+/*module style_yj2*/
+.yjsquare_yj2 {
+	background:#eee;
+	border:1px solid #c0c0c0;
+}
+#YJS_left, #YJS_right,
+#YJS_left_1, #YJS_right_1,
+#YJS_left_2, #YJS_right_2,
+#YJS_left_3, #YJS_right_3,
+#YJS_left_4, #YJS_right_4,
+#YJS_left_5, #YJS_right_5{
+	background:url(../images/orange/navs_l.gif)
+}
+#YJS_right,#YJS_right_1,
+#YJS_right_2,#YJS_right_3,
+#YJS_right_4,#YJS_right_5{
+	background:url(../images/orange/navs_r.gif)
+}
+

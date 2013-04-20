@@ -1,0 +1,109 @@
+/* FIRST DROP UL*/
+/*.top_menu{
+	height:64px;
+}*/
+.horiznav ul ul.subul_main  {
+	float:left!important;
+	padding:0!important;
+	height:37px;
+}
+
+.horiznav li:hover ul {
+	z-index:100;
+	left:0;
+	margin:0!important;
+	height:37px;
+}
+.horiznav li:hover ul.group_holder{
+	height:auto;
+}
+.top_menu ul.subul_main li{
+	border-bottom:none;
+}
+
+.horiznav ul ul.subul_main li a,
+.horiznav ul ul.subul_main li a:hover{
+	height:37px;
+	padding-right:20px;
+	display:block;
+	font-weight:bold;
+	border:none;
+	overflow:hidden;
+	text-transform:capitalize;
+	
+}
+/*FIRST SUB LEVEL PARENT ITEM ARROWS*/
+ul.subul_main.dropline.level1 li.haschild span.child a,
+ul.subul_main.dropline.level1 li.haschild span.child a:hover{
+	background-position:95% 12px!important;
+}
+.horiznav ul li ul li.tl,
+.horiznav ul li ul li.tr,
+.horiznav ul li ul li.bl,
+.horiznav ul li ul li.br,
+.horiznav ul li ul li.right{
+	display:none!important;
+}
+
+/* SECOND DROP UL*/
+.horiznav  ul ul.subul_main ul {
+	height:auto!important;
+	margin-top:10px!important;
+}
+.top_menu ul ul ul.subul_main{
+	padding:7px 0px!important;
+	display:block;
+	margin-top:10px;
+}
+.horiznav ul ul li,.horiznav ul ul li:hover{
+	float:left;
+	width:auto;
+}
+.horiznav  ul ul.subul_main ul a,
+.horiznav  ul ul.subul_main ul a:hover{
+	font-weight:bold;
+	display:block;
+	text-transform:uppercase;
+	height:auto!important;
+	padding:0;
+}
+/*SECOND SUB LEVEL PARENT ITEM ARROWS*/
+ul ul.subul_main ul li.haschild a.child, 
+ul ul.subul_main ul li.haschild a.child:hover {
+	background-position:95% 50%!important;
+}
+.horiznav ul li ul ul li.tl,
+.horiznav ul li ul ul li.tr,
+.horiznav ul li ul ul li.bl,
+.horiznav ul li ul ul li.br,
+.horiznav ul li ul ul li.right,
+.horiznav ul li ul ul li.tl:hover,
+.horiznav ul li ul ul li.tr:hover,
+.horiznav ul li ul ul li.bl:hover,
+.horiznav ul li ul ul li.br:hover,
+.horiznav ul li ul ul li.right:hover{
+	display:block!important;
+}
+li.tl,li.bl,li.right,
+li.tl:hover,li.bl:hover,li.right:hover{
+	width:20px!important;
+	position:absolute!important;
+}
+li.br,li.tr,
+li.br:hover,li.tr:hover{
+	width:100%!important;
+	position:absolute!important;
+}
+.horiznav ul li ul ul li,
+.horiznav ul li ul ul li:hover,
+.horiznav ul li ul ul a,
+.horiznav ul li ul ul a:hover{
+	display:block;
+	padding:0;
+}
+ul.subul_main.dropline div.yj_menu_module_holder{
+	margin-right:20px;
+}
+/*.subul_main.dropline.level1{
+	display:none!important;
+}*/
